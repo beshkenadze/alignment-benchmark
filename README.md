@@ -12,7 +12,7 @@ Tested on two audio samples:
 
 | # | Model | Mean Start Dev | Median Start | Inference | License |
 |---|---|---:|---:|---:|---|
-| 🥇 | **MFA v3** | **69.3ms** | **39.0ms** | 35.1s | MIT |
+| 🥇 | **MFA v3** | **69.3ms** | **39.0ms** | 35.1s (CLI) / **1.49s (API)** | MIT |
 | 🥈 | **ctc-forced-aligner (MMS)** | 73.3ms | 31.2ms | 4.6s | MIT |
 | 3 | qwen3-forced-aligner | 86.1ms | 52.7ms | 2.7s | Apache 2.0 |
 | 4 | whisper-char-align (large-v3) | 94.6ms | 55.9ms | 20.1s | MIT |
@@ -27,7 +27,7 @@ Tested on two audio samples:
 | # | Model | Mean Start Dev | Median Start | Inference | License |
 |---|---|---:|---:|---:|---|
 | 🥇 | **Vosk (ru-0.42)** | **45.1ms** | **31.2ms** | 1.0s | Apache 2.0 |
-| 🥈 | **MFA v3 (russian_mfa)** | **56.7ms** | 41.4ms | 190.8s ⚠️ | MIT |
+| 🥈 | **MFA v3 (russian_mfa)** | **56.7ms** | 41.4ms | 190.8s (CLI) / **1.61s (API)** | MIT |
 | 3 | qwen3-forced-aligner | 63.2ms | 41.6ms | 0.25s | Apache 2.0 |
 | 4 | stable-ts (base) | 74.6ms | 57.8ms | 0.6s | MIT |
 | 5 | parakeet-tdt-0.6b-v3 (mlx) | 79.1ms | 69.1ms | 0.6s | CC-BY-4.0 |
@@ -38,10 +38,10 @@ Tested on two audio samples:
 
 ## Key Findings
 
-- **MFA v3** is the gold standard for English alignment (best mean deviation 69ms) and strong for Russian (57ms), but extremely slow (191s for 10s of Russian audio)
-- **Vosk** is a surprise winner for Russian (45ms mean deviation), very fast, Apache 2.0
+- **MFA v3** is the gold standard for accuracy (69ms EN, 57ms RU). The CLI is slow (35–191s), but using the direct `KalpyAligner` Python API achieves **1.5s per utterance** with negligible accuracy loss. See [MFA_ANALYSIS.md](MFA_ANALYSIS.md) for the deep-dive.
+- **Vosk** is a surprise winner for Russian (45ms mean deviation), very fast, Apache 2.0 — but it's an ASR model that ignores the provided transcript
 - **Qwen3-ForcedAligner** offers the best speed/accuracy trade-off for both languages (3rd place EN and RU, fastest among accurate models)
-- **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50-100ms uncertainty
+- **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50–100ms uncertainty
 - All models were benchmarked using only permissive open-source licenses (MIT, Apache 2.0, CC-BY-4.0)
 
 ## Models Tested

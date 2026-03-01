@@ -3,6 +3,7 @@
     "models": [
       "ctc-forced-aligner (MMS-300M)",
       "faster-whisper (native timestamps, base)",
+      "mfa v3 api (english_mfa)",
       "mfa v3 (english_mfa)",
       "parakeet-tdt-0.6b-v3 (mlx)",
       "qwen3-forced-aligner (0.6B, mlx-audio)",
@@ -25,6 +26,13 @@
         "load_time": 0.8342064579483122,
         "peak_memory_mb": 599.0625,
         "word_count": 81
+      },
+      {
+        "model": "mfa v3 api (english_mfa)",
+        "inference_time": 1.488839,
+        "load_time": 4.673924,
+        "peak_memory_mb": 0.0,
+        "word_count": 80
       },
       {
         "model": "mfa v3 (english_mfa)",
@@ -129,6 +137,10 @@
             "start": 1.18,
             "end": 1.46
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 1.2300000190734863,
+            "end": 1.5700000524520874
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 1.2,
             "end": 1.52
@@ -169,6 +181,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 1.46,
             "end": 1.66
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 1.5700000524520874,
+            "end": 1.6799999475479126
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 1.6,
@@ -211,6 +227,10 @@
             "start": 1.66,
             "end": 2.12
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 1.7100000381469727,
+            "end": 2.1500000953674316
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 1.76,
             "end": 2.3200000000000003
@@ -252,6 +272,10 @@
             "start": 2.48,
             "end": 2.68
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 1.7100000381469727,
+            "end": 2.1500000953674316
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 2.32,
             "end": 2.64
@@ -292,6 +316,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 2.68,
             "end": 2.82
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 2.440000057220459,
+            "end": 2.4700000286102295
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 2.64,
@@ -352,6 +380,10 @@
             "start": 3.06,
             "end": 3.64
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 3.240000009536743,
+            "end": 3.890000104904175
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 3.2800000000000002,
             "end": 3.8400000000000003
@@ -392,6 +424,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 3.64,
             "end": 4.06
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 3.890000104904175,
+            "end": 4.119999885559082
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 3.84,
@@ -434,6 +470,10 @@
             "start": 4.06,
             "end": 4.28
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 4.119999885559082,
+            "end": 4.289999961853027
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 4.16,
             "end": 4.32
@@ -474,6 +514,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 4.28,
             "end": 4.44
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 4.289999961853027,
+            "end": 4.420000076293945
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 4.32,
@@ -557,6 +601,10 @@
             "start": 5.22,
             "end": 5.32
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 5.199999809265137,
+            "end": 5.349999904632568
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 5.04,
             "end": 5.2
@@ -597,6 +645,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 5.32,
             "end": 5.42
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 5.349999904632568,
+            "end": 5.449999809265137
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 5.2,
@@ -639,6 +691,10 @@
             "start": 5.42,
             "end": 5.6
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 5.449999809265137,
+            "end": 5.570000171661377
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 5.44,
             "end": 5.6000000000000005
@@ -679,6 +735,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 5.6,
             "end": 5.78
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 5.570000171661377,
+            "end": 5.869999885559082
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 5.6000000000000005,
@@ -762,6 +822,10 @@
             "start": 6.1,
             "end": 6.7
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 6.610000133514404,
+            "end": 6.710000038146973
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 6.640000000000001,
             "end": 6.800000000000001
@@ -802,6 +866,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 6.7,
             "end": 6.82
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 6.710000038146973,
+            "end": 6.880000114440918
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 6.8,
@@ -844,6 +912,10 @@
             "start": 6.82,
             "end": 7.0
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 6.880000114440918,
+            "end": 7.099999904632568
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 6.96,
             "end": 7.12
@@ -884,6 +956,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 7.0,
             "end": 7.58
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 7.099999904632568,
+            "end": 7.739999771118164
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 7.12,
@@ -926,6 +1002,10 @@
             "start": 7.58,
             "end": 8.2
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 7.739999771118164,
+            "end": 8.359999656677246
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 7.76,
             "end": 8.24
@@ -966,6 +1046,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 8.2,
             "end": 8.38
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 8.359999656677246,
+            "end": 8.390000343322754
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 8.24,
@@ -1008,6 +1092,10 @@
             "start": 8.38,
             "end": 8.52
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 8.390000343322754,
+            "end": 8.520000457763672
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 8.4,
             "end": 8.64
@@ -1048,6 +1136,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 8.52,
             "end": 8.72
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 8.520000457763672,
+            "end": 8.739999771118164
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 8.64,
@@ -1090,6 +1182,10 @@
             "start": 8.72,
             "end": 9.04
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 8.739999771118164,
+            "end": 9.199999809265137
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 8.88,
             "end": 9.280000000000001
@@ -1131,6 +1227,10 @@
             "start": 9.04,
             "end": 9.28
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 9.199999809265137,
+            "end": 9.279999732971191
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 9.28,
             "end": 9.52
@@ -1171,6 +1271,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 9.28,
             "end": 9.5
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 9.279999732971191,
+            "end": 9.5600004196167
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 9.52,
@@ -1295,6 +1399,10 @@
             "start": 10.5,
             "end": 11.12
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 11.010000228881836,
+            "end": 11.140000343322754
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 10.88,
             "end": 11.200000000000001
@@ -1335,6 +1443,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 11.12,
             "end": 11.44
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 11.140000343322754,
+            "end": 11.819999694824219
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 11.200000000000001,
@@ -1377,6 +1489,10 @@
             "start": 11.44,
             "end": 12.14
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 11.979999542236328,
+            "end": 12.039999961853027
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 11.92,
             "end": 12.16
@@ -1417,6 +1533,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 12.14,
             "end": 12.36
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 12.039999961853027,
+            "end": 12.390000343322754
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 12.16,
@@ -1459,6 +1579,10 @@
             "start": 12.36,
             "end": 12.52
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 12.390000343322754,
+            "end": 12.569999694824219
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 12.32,
             "end": 12.56
@@ -1499,6 +1623,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 12.52,
             "end": 12.64
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 12.569999694824219,
+            "end": 12.640000343322754
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 12.56,
@@ -1541,6 +1669,10 @@
             "start": 12.64,
             "end": 12.94
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 12.640000343322754,
+            "end": 13.0600004196167
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 12.72,
             "end": 13.040000000000001
@@ -1581,6 +1713,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 12.94,
             "end": 13.22
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 13.0600004196167,
+            "end": 13.279999732971191
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 13.040000000000001,
@@ -1623,6 +1759,10 @@
             "start": 13.22,
             "end": 13.34
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 13.279999732971191,
+            "end": 13.34000015258789
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 13.280000000000001,
             "end": 13.440000000000001
@@ -1659,6 +1799,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 13.34,
             "end": 13.52
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 13.34000015258789,
+            "end": 13.630000114440918
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 13.44,
@@ -1779,6 +1923,10 @@
             "start": 14.64,
             "end": 15.16
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 14.760000228881836,
+            "end": 15.119999885559082
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 14.8,
             "end": 15.440000000000001
@@ -1861,6 +2009,10 @@
             "start": 15.5,
             "end": 16.3
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 16.09000015258789,
+            "end": 16.489999771118164
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 16.16,
             "end": 16.48
@@ -1901,6 +2053,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 16.3,
             "end": 16.64
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 16.489999771118164,
+            "end": 16.780000686645508
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 16.48,
@@ -1943,6 +2099,10 @@
             "start": 16.64,
             "end": 17.08
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 16.780000686645508,
+            "end": 17.299999237060547
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 16.8,
             "end": 17.36
@@ -1983,6 +2143,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 17.08,
             "end": 17.4
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 17.299999237060547,
+            "end": 17.440000534057617
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 17.36,
@@ -2025,6 +2189,10 @@
             "start": 17.4,
             "end": 17.94
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 17.440000534057617,
+            "end": 18.200000762939453
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 17.6,
             "end": 18.16
@@ -2065,6 +2233,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 17.94,
             "end": 18.26
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 18.200000762939453,
+            "end": 18.229999542236328
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 18.16,
@@ -2107,6 +2279,10 @@
             "start": 18.26,
             "end": 18.46
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 18.229999542236328,
+            "end": 18.65999984741211
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 18.400000000000002,
             "end": 18.799999999999997
@@ -2147,6 +2323,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 18.46,
             "end": 18.74
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 18.65999984741211,
+            "end": 18.81999969482422
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 18.8,
@@ -2189,6 +2369,10 @@
             "start": 18.74,
             "end": 19.34
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 18.81999969482422,
+            "end": 19.780000686645508
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 19.12,
             "end": 20.0
@@ -2230,6 +2414,10 @@
             "start": 19.34,
             "end": 20.02
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 19.780000686645508,
+            "end": 20.100000381469727
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 20.0,
             "end": 20.32
@@ -2270,6 +2458,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 20.02,
             "end": 20.46
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 20.100000381469727,
+            "end": 20.360000610351562
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 20.32,
@@ -2353,6 +2545,10 @@
             "start": 21.54,
             "end": 21.76
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 21.6200008392334,
+            "end": 21.799999237060547
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 21.52,
             "end": 21.84
@@ -2393,6 +2589,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 21.76,
             "end": 22.1
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 21.799999237060547,
+            "end": 22.31999969482422
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 21.84,
@@ -2435,6 +2635,10 @@
             "start": 22.4,
             "end": 22.88
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 21.6200008392334,
+            "end": 21.799999237060547
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 22.64,
             "end": 22.88
@@ -2475,6 +2679,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 22.88,
             "end": 23.14
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 21.799999237060547,
+            "end": 22.31999969482422
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 22.88,
@@ -2517,6 +2725,10 @@
             "start": 23.14,
             "end": 23.32
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 22.84000015258789,
+            "end": 23.059999465942383
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 23.28,
             "end": 23.52
@@ -2557,6 +2769,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 23.32,
             "end": 23.6
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 23.059999465942383,
+            "end": 23.6299991607666
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 23.52,
@@ -2640,6 +2856,10 @@
             "start": 24.52,
             "end": 24.7
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 24.649999618530273,
+            "end": 24.700000762939453
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 24.48,
             "end": 24.72
@@ -2680,6 +2900,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 24.7,
             "end": 24.86
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 24.700000762939453,
+            "end": 24.93000030517578
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 24.72,
@@ -2722,6 +2946,10 @@
             "start": 24.86,
             "end": 25.02
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 24.93000030517578,
+            "end": 25.079999923706055
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 24.96,
             "end": 25.12
@@ -2762,6 +2990,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 25.02,
             "end": 25.16
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 25.079999923706055,
+            "end": 25.1200008392334
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 25.12,
@@ -2804,6 +3036,10 @@
             "start": 25.16,
             "end": 25.64
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 25.1200008392334,
+            "end": 25.950000762939453
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 25.36,
             "end": 26.08
@@ -2844,6 +3080,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 25.64,
             "end": 26.52
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 25.950000762939453,
+            "end": 26.719999313354492
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 26.080000000000002,
@@ -2886,6 +3126,10 @@
             "start": 26.52,
             "end": 26.76
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 26.719999313354492,
+            "end": 26.799999237060547
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 26.64,
             "end": 26.8
@@ -2926,6 +3170,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 26.76,
             "end": 26.9
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 26.799999237060547,
+            "end": 26.860000610351562
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 26.8,
@@ -2968,6 +3216,10 @@
             "start": 26.9,
             "end": 27.14
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 26.860000610351562,
+            "end": 27.059999465942383
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 26.96,
             "end": 27.2
@@ -3008,6 +3260,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 27.14,
             "end": 27.32
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 27.059999465942383,
+            "end": 27.360000610351562
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 27.2,
@@ -3050,6 +3306,10 @@
             "start": 27.32,
             "end": 27.78
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 27.360000610351562,
+            "end": 28.010000228881836
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 27.44,
             "end": 28.0
@@ -3091,6 +3351,10 @@
             "start": 27.78,
             "end": 28.06
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 28.010000228881836,
+            "end": 28.309999465942383
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 28.0,
             "end": 28.16
@@ -3131,6 +3395,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 28.06,
             "end": 28.16
+          },
+          "mfa v3 api (english_mfa)": {
+            "start": 28.309999465942383,
+            "end": 28.389999389648438
           },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 28.16,
@@ -3191,6 +3459,10 @@
             "start": 28.5,
             "end": 29.26
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 29.1299991607666,
+            "end": 29.31999969482422
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 28.88,
             "end": 29.119999999999997
@@ -3232,6 +3504,10 @@
             "start": 24.52,
             "end": 24.7
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 29.31999969482422,
+            "end": 29.360000610351562
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 29.12,
             "end": 29.28
@@ -3269,6 +3545,10 @@
             "start": 29.4,
             "end": 29.98
           },
+          "mfa v3 api (english_mfa)": {
+            "start": 29.360000610351562,
+            "end": 30.0
+          },
           "parakeet-tdt-0.6b-v3 (mlx)": {
             "start": 29.28,
             "end": 29.68
@@ -3297,6 +3577,7 @@
     "models": [
       "ctc-forced-aligner (MMS-300M)",
       "faster-whisper (native timestamps, base)",
+      "mfa v3 api (russian_mfa)",
       "mfa v3 (russian_mfa)",
       "parakeet-tdt-0.6b-v3 (mlx)",
       "qwen3-forced-aligner (0.6B, mlx-audio)",
@@ -3319,6 +3600,13 @@
         "load_time": 0.8342064579483122,
         "peak_memory_mb": 599.90625,
         "word_count": 22
+      },
+      {
+        "model": "mfa v3 api (russian_mfa)",
+        "inference_time": 1.611612,
+        "load_time": 26.407925,
+        "peak_memory_mb": 0.0,
+        "word_count": 25
       },
       {
         "model": "mfa v3 (russian_mfa)",
@@ -3382,6 +3670,10 @@
             "start": 0.0,
             "end": 0.3
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 0.0,
+            "end": 0.3199999928474426
+          },
           "mfa v3 (russian_mfa)": {
             "start": 0.0,
             "end": 0.32
@@ -3419,6 +3711,10 @@
             "start": 0.3,
             "end": 0.48
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 0.3199999928474426,
+            "end": 0.5600000023841858
+          },
           "mfa v3 (russian_mfa)": {
             "start": 0.32,
             "end": 0.56
@@ -3451,6 +3747,10 @@
           "ctc-forced-aligner (MMS-300M)": {
             "start": 0.567,
             "end": 0.609
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 0.5600000023841858,
+            "end": 0.5899999737739563
           },
           "mfa v3 (russian_mfa)": {
             "start": 0.56,
@@ -3518,6 +3818,10 @@
             "start": 2.02,
             "end": 2.14
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 2.0399999618530273,
+            "end": 2.130000114440918
+          },
           "mfa v3 (russian_mfa)": {
             "start": 2.04,
             "end": 2.13
@@ -3555,6 +3859,10 @@
             "start": 2.226,
             "end": 2.436
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 2.130000114440918,
+            "end": 2.3499999046325684
+          },
           "mfa v3 (russian_mfa)": {
             "start": 2.13,
             "end": 2.35
@@ -3579,6 +3887,10 @@
           "ctc-forced-aligner (MMS-300M)": {
             "start": 2.436,
             "end": 2.667
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 2.3499999046325684,
+            "end": 2.549999952316284
           },
           "mfa v3 (russian_mfa)": {
             "start": 2.35,
@@ -3612,6 +3924,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 2.52,
             "end": 2.74
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 2.549999952316284,
+            "end": 2.7799999713897705
           },
           "mfa v3 (russian_mfa)": {
             "start": 2.55,
@@ -3695,6 +4011,10 @@
             "start": 3.14,
             "end": 3.46
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 3.200000047683716,
+            "end": 3.509999990463257
+          },
           "mfa v3 (russian_mfa)": {
             "start": 3.21,
             "end": 3.51
@@ -3735,6 +4055,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 3.46,
             "end": 3.8
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 3.509999990463257,
+            "end": 3.930000066757202
           },
           "mfa v3 (russian_mfa)": {
             "start": 3.51,
@@ -3777,6 +4101,10 @@
             "start": 2.02,
             "end": 2.14
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 4.099999904632568,
+            "end": 4.179999828338623
+          },
           "mfa v3 (russian_mfa)": {
             "start": 4.1,
             "end": 4.18
@@ -3813,6 +4141,10 @@
           "ctc-forced-aligner (MMS-300M)": {
             "start": 4.368,
             "end": 4.62
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 4.179999828338623,
+            "end": 4.429999828338623
           },
           "mfa v3 (russian_mfa)": {
             "start": 4.18,
@@ -3888,6 +4220,10 @@
             "start": 5.754,
             "end": 6.489
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 6.150000095367432,
+            "end": 6.210000038146973
+          },
           "mfa v3 (russian_mfa)": {
             "start": 6.15,
             "end": 6.21
@@ -3916,6 +4252,10 @@
           "ctc-forced-aligner (MMS-300M)": {
             "start": 6.489,
             "end": 6.678
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 6.210000038146973,
+            "end": 6.360000133514404
           },
           "mfa v3 (russian_mfa)": {
             "start": 6.21,
@@ -3953,6 +4293,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 6.34,
             "end": 6.88
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 6.360000133514404,
+            "end": 6.909999847412109
           },
           "mfa v3 (russian_mfa)": {
             "start": 6.36,
@@ -3994,6 +4338,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 6.88,
             "end": 7.2
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 6.909999847412109,
+            "end": 7.260000228881836
           },
           "mfa v3 (russian_mfa)": {
             "start": 6.91,
@@ -4077,6 +4425,10 @@
             "start": 7.68,
             "end": 7.7
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 7.630000114440918,
+            "end": 7.699999809265137
+          },
           "mfa v3 (russian_mfa)": {
             "start": 7.63,
             "end": 7.7
@@ -4117,6 +4469,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 7.7,
             "end": 7.84
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 7.699999809265137,
+            "end": 7.840000152587891
           },
           "mfa v3 (russian_mfa)": {
             "start": 7.7,
@@ -4200,6 +4556,10 @@
             "start": 8.24,
             "end": 8.64
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 8.15999984741211,
+            "end": 8.829999923706055
+          },
           "mfa v3 (russian_mfa)": {
             "start": 8.14,
             "end": 8.83
@@ -4241,6 +4601,10 @@
             "start": 8.64,
             "end": 9.54
           },
+          "mfa v3 api (russian_mfa)": {
+            "start": 9.170000076293945,
+            "end": 9.539999961853027
+          },
           "mfa v3 (russian_mfa)": {
             "start": 9.17,
             "end": 9.54
@@ -4281,6 +4645,10 @@
           "faster-whisper (native timestamps, base)": {
             "start": 9.54,
             "end": 9.98
+          },
+          "mfa v3 api (russian_mfa)": {
+            "start": 9.539999961853027,
+            "end": 10.0
           },
           "mfa v3 (russian_mfa)": {
             "start": 9.54,

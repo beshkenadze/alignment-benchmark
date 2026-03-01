@@ -1,0 +1,170 @@
+{
+  "model": "mfa v3 api (russian_mfa)",
+  "audio_file": "/Users/akira/Downloads/Spoon Episodex/Episode 171/compare/episode171-original_trim10_10s.wav",
+  "language": "ru",
+  "inference_time_seconds": 1.611612,
+  "model_load_time_seconds": 26.407925,
+  "peak_memory_mb": 0.0,
+  "words": [
+    {
+      "word": "новый",
+      "start": 0.0,
+      "end": 0.3199999928474426,
+      "confidence": null
+    },
+    {
+      "word": "год",
+      "start": 0.3199999928474426,
+      "end": 0.5600000023841858,
+      "confidence": null
+    },
+    {
+      "word": "и",
+      "start": 0.5600000023841858,
+      "end": 0.5899999737739563,
+      "confidence": null
+    },
+    {
+      "word": "<unk>",
+      "start": 0.5899999737739563,
+      "end": 1.25,
+      "confidence": null
+    },
+    {
+      "word": "о",
+      "start": 2.0399999618530273,
+      "end": 2.130000114440918,
+      "confidence": null
+    },
+    {
+      "word": "чём",
+      "start": 2.130000114440918,
+      "end": 2.3499999046325684,
+      "confidence": null
+    },
+    {
+      "word": "ещё",
+      "start": 2.3499999046325684,
+      "end": 2.549999952316284,
+      "confidence": null
+    },
+    {
+      "word": "можно",
+      "start": 2.549999952316284,
+      "end": 2.7799999713897705,
+      "confidence": null
+    },
+    {
+      "word": "<unk>",
+      "start": 2.7799999713897705,
+      "end": 3.200000047683716,
+      "confidence": null
+    },
+    {
+      "word": "кроме",
+      "start": 3.200000047683716,
+      "end": 3.509999990463257,
+      "confidence": null
+    },
+    {
+      "word": "как",
+      "start": 3.509999990463257,
+      "end": 3.930000066757202,
+      "confidence": null
+    },
+    {
+      "word": "о",
+      "start": 4.099999904632568,
+      "end": 4.179999828338623,
+      "confidence": null
+    },
+    {
+      "word": "гарри",
+      "start": 4.179999828338623,
+      "end": 4.429999828338623,
+      "confidence": null
+    },
+    {
+      "word": "<unk>",
+      "start": 4.460000038146973,
+      "end": 4.869999885559082,
+      "confidence": null
+    },
+    {
+      "word": "и",
+      "start": 6.150000095367432,
+      "end": 6.210000038146973,
+      "confidence": null
+    },
+    {
+      "word": "эта",
+      "start": 6.210000038146973,
+      "end": 6.360000133514404,
+      "confidence": null
+    },
+    {
+      "word": "замечательная",
+      "start": 6.360000133514404,
+      "end": 6.909999847412109,
+      "confidence": null
+    },
+    {
+      "word": "серия",
+      "start": 6.909999847412109,
+      "end": 7.260000228881836,
+      "confidence": null
+    },
+    {
+      "word": "<unk>",
+      "start": 7.260000228881836,
+      "end": 7.599999904632568,
+      "confidence": null
+    },
+    {
+      "word": "на",
+      "start": 7.630000114440918,
+      "end": 7.699999809265137,
+      "confidence": null
+    },
+    {
+      "word": "мой",
+      "start": 7.699999809265137,
+      "end": 7.840000152587891,
+      "confidence": null
+    },
+    {
+      "word": "<unk>",
+      "start": 7.840000152587891,
+      "end": 8.15999984741211,
+      "confidence": null
+    },
+    {
+      "word": "является",
+      "start": 8.15999984741211,
+      "end": 8.829999923706055,
+      "confidence": null
+    },
+    {
+      "word": "лучшим",
+      "start": 9.170000076293945,
+      "end": 9.539999961853027,
+      "confidence": null
+    },
+    {
+      "word": "произведением",
+      "start": 9.539999961853027,
+      "end": 10.0,
+      "confidence": null
+    }
+  ],
+  "timing_breakdown": {
+    "import_s": 2.3682,
+    "acoustic_model_load_s": 0.5489,
+    "lexicon_fst_compile_s": 22.8255,
+    "aligner_creation_s": 0.6654,
+    "feature_extraction_s": 1.2729,
+    "alignment_s": 0.3388,
+    "total_one_time_s": 26.4079,
+    "total_per_utterance_s": 1.6116
+  }
+}

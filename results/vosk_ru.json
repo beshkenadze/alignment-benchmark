@@ -1,0 +1,154 @@
+{
+  "model": "vosk (vosk-model-ru-0.42)",
+  "audio_file": "/Users/akira/Downloads/Spoon Episodex/Episode 171/compare/episode171-original_trim10_10s.wav",
+  "language": "ru",
+  "inference_time_seconds": 0.993105,
+  "model_load_time_seconds": 28.426954,
+  "peak_memory_mb": 0.018,
+  "words": [
+    {
+      "word": "новый",
+      "start": 0.026403,
+      "end": 0.36,
+      "confidence": 1.0
+    },
+    {
+      "word": "год",
+      "start": 0.36,
+      "end": 0.6,
+      "confidence": 1.0
+    },
+    {
+      "word": "и",
+      "start": 0.6,
+      "end": 0.62955,
+      "confidence": 0.557946
+    },
+    {
+      "word": "рождество",
+      "start": 0.62955,
+      "end": 1.47,
+      "confidence": 1.0
+    },
+    {
+      "word": "о",
+      "start": 2.01,
+      "end": 2.16,
+      "confidence": 1.0
+    },
+    {
+      "word": "чем",
+      "start": 2.16,
+      "end": 2.37,
+      "confidence": 0.930334
+    },
+    {
+      "word": "ещё",
+      "start": 2.37,
+      "end": 2.58,
+      "confidence": 1.0
+    },
+    {
+      "word": "можно",
+      "start": 2.58,
+      "end": 2.85,
+      "confidence": 1.0
+    },
+    {
+      "word": "говорить",
+      "start": 2.85,
+      "end": 3.21,
+      "confidence": 1.0
+    },
+    {
+      "word": "кроме",
+      "start": 3.21,
+      "end": 3.54,
+      "confidence": 1.0
+    },
+    {
+      "word": "как",
+      "start": 3.54,
+      "end": 3.96,
+      "confidence": 1.0
+    },
+    {
+      "word": "о",
+      "start": 4.05,
+      "end": 4.2,
+      "confidence": 1.0
+    },
+    {
+      "word": "гарри",
+      "start": 4.2,
+      "end": 4.44,
+      "confidence": 1.0
+    },
+    {
+      "word": "поттере",
+      "start": 4.44,
+      "end": 4.95,
+      "confidence": 1.0
+    },
+    {
+      "word": "эта",
+      "start": 6.1375,
+      "end": 6.39,
+      "confidence": 0.698059
+    },
+    {
+      "word": "замечательная",
+      "start": 6.39,
+      "end": 6.96,
+      "confidence": 1.0
+    },
+    {
+      "word": "серия",
+      "start": 6.96,
+      "end": 7.29,
+      "confidence": 1.0
+    },
+    {
+      "word": "книг",
+      "start": 7.29,
+      "end": 7.65,
+      "confidence": 1.0
+    },
+    {
+      "word": "на",
+      "start": 7.65,
+      "end": 7.74,
+      "confidence": 1.0
+    },
+    {
+      "word": "мой",
+      "start": 7.74,
+      "end": 7.86,
+      "confidence": 1.0
+    },
+    {
+      "word": "взгляд",
+      "start": 7.86,
+      "end": 8.16,
+      "confidence": 1.0
+    },
+    {
+      "word": "является",
+      "start": 8.16,
+      "end": 8.91,
+      "confidence": 1.0
+    },
+    {
+      "word": "лучшим",
+      "start": 9.12,
+      "end": 9.57,
+      "confidence": 1.0
+    },
+    {
+      "word": "произведём",
+      "start": 9.57,
+      "end": 9.99,
+      "confidence": 0.531709
+    }
+  ]
+}

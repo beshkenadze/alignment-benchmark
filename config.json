@@ -1,0 +1,38 @@
+{
+  "python_version": "3.12",
+  "audio_files": {
+    "en": {
+      "path": "/Users/akira/Downloads/Contracts Week 1 Module 1 Slides_30sec.mp3",
+      "language": "en",
+      "language_iso639_3": "eng",
+      "duration_approx_sec": 30,
+      "reference_transcript": "Well, hello and welcome. Welcome to U.S. Contract Law for the Bar. My name is Mike Sims, and I am genuinely excited to be your guide for this course. Now, I realize that you may have studied law in another country. Well, that's okay, because this class is designed to meet you exactly where you are. My mission? My mission is very simple: to give you a fundamental understanding of the law of contracts in the U.S. and to highlight"
+    },
+    "ru": {
+      "path": "/Users/akira/Downloads/Spoon Episodex/Episode 171/compare/episode171-original_trim10_10s.wav",
+      "language": "ru",
+      "language_iso639_3": "rus",
+      "duration_approx_sec": 10,
+      "reference_transcript": "Новый год и Рождество, о чём ещё можно говорить, кроме как о Гарри Поттере? И эта замечательная серия книг, на мой взгляд, является лучшим произведением"
+    }
+  },
+  "output_format": {
+    "description": "Each model MUST output results as JSON to results/<model_name>_<lang>.json",
+    "schema": {
+      "model": "string - model name",
+      "audio_file": "string - which audio file was processed",
+      "language": "string - en or ru",
+      "inference_time_seconds": "float - total alignment time excluding model load",
+      "model_load_time_seconds": "float - time to load model",
+      "peak_memory_mb": "float - peak memory usage if measurable",
+      "words": [
+        {
+          "word": "string - the word text",
+          "start": "float - start time in seconds",
+          "end": "float - end time in seconds",
+          "confidence": "float - confidence score if available, else null"
+        }
+      ]
+    }
+  }
+}

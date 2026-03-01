@@ -1,0 +1,490 @@
+{
+  "model": "qwen3-forced-aligner (0.6B, mlx-audio)",
+  "audio_file": "/Users/akira/Downloads/Contracts Week 1 Module 1 Slides_30sec.mp3",
+  "language": "en",
+  "inference_time_seconds": 2.69117,
+  "model_load_time_seconds": 2.885986,
+  "peak_memory_mb": 2745.341,
+  "words": [
+    {
+      "word": "Well",
+      "start": 1.12,
+      "end": 1.28,
+      "confidence": null
+    },
+    {
+      "word": "hello",
+      "start": 1.28,
+      "end": 1.6,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 1.6,
+      "end": 1.76,
+      "confidence": null
+    },
+    {
+      "word": "welcome",
+      "start": 1.76,
+      "end": 2.48,
+      "confidence": null
+    },
+    {
+      "word": "Welcome",
+      "start": 2.48,
+      "end": 2.8,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 2.8,
+      "end": 2.8,
+      "confidence": null
+    },
+    {
+      "word": "US",
+      "start": 3.04,
+      "end": 3.2,
+      "confidence": null
+    },
+    {
+      "word": "Contract",
+      "start": 3.2,
+      "end": 3.92,
+      "confidence": null
+    },
+    {
+      "word": "Law",
+      "start": 3.92,
+      "end": 4.16,
+      "confidence": null
+    },
+    {
+      "word": "for",
+      "start": 4.16,
+      "end": 4.32,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 4.32,
+      "end": 4.48,
+      "confidence": null
+    },
+    {
+      "word": "Bar",
+      "start": 4.48,
+      "end": 4.96,
+      "confidence": null
+    },
+    {
+      "word": "My",
+      "start": 5.28,
+      "end": 5.44,
+      "confidence": null
+    },
+    {
+      "word": "name",
+      "start": 5.44,
+      "end": 5.52,
+      "confidence": null
+    },
+    {
+      "word": "is",
+      "start": 5.52,
+      "end": 5.6,
+      "confidence": null
+    },
+    {
+      "word": "Mike",
+      "start": 5.6,
+      "end": 5.92,
+      "confidence": null
+    },
+    {
+      "word": "Sims",
+      "start": 5.92,
+      "end": 6.56,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 6.64,
+      "end": 6.8,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 6.8,
+      "end": 6.88,
+      "confidence": null
+    },
+    {
+      "word": "am",
+      "start": 6.88,
+      "end": 7.12,
+      "confidence": null
+    },
+    {
+      "word": "genuinely",
+      "start": 7.12,
+      "end": 7.76,
+      "confidence": null
+    },
+    {
+      "word": "excited",
+      "start": 7.76,
+      "end": 8.32,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 8.4,
+      "end": 8.4,
+      "confidence": null
+    },
+    {
+      "word": "be",
+      "start": 8.4,
+      "end": 8.56,
+      "confidence": null
+    },
+    {
+      "word": "your",
+      "start": 8.56,
+      "end": 8.8,
+      "confidence": null
+    },
+    {
+      "word": "guide",
+      "start": 8.8,
+      "end": 9.2,
+      "confidence": null
+    },
+    {
+      "word": "for",
+      "start": 9.2,
+      "end": 9.36,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 9.36,
+      "end": 9.6,
+      "confidence": null
+    },
+    {
+      "word": "course",
+      "start": 9.6,
+      "end": 10.08,
+      "confidence": null
+    },
+    {
+      "word": "Now",
+      "start": 10.4,
+      "end": 10.64,
+      "confidence": null
+    },
+    {
+      "word": "I",
+      "start": 11.04,
+      "end": 11.2,
+      "confidence": null
+    },
+    {
+      "word": "realize",
+      "start": 11.2,
+      "end": 11.92,
+      "confidence": null
+    },
+    {
+      "word": "that",
+      "start": 12.0,
+      "end": 12.24,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 12.24,
+      "end": 12.4,
+      "confidence": null
+    },
+    {
+      "word": "may",
+      "start": 12.4,
+      "end": 12.64,
+      "confidence": null
+    },
+    {
+      "word": "have",
+      "start": 12.64,
+      "end": 12.72,
+      "confidence": null
+    },
+    {
+      "word": "studied",
+      "start": 12.72,
+      "end": 13.12,
+      "confidence": null
+    },
+    {
+      "word": "law",
+      "start": 13.12,
+      "end": 13.28,
+      "confidence": null
+    },
+    {
+      "word": "in",
+      "start": 13.28,
+      "end": 13.36,
+      "confidence": null
+    },
+    {
+      "word": "another",
+      "start": 13.36,
+      "end": 13.68,
+      "confidence": null
+    },
+    {
+      "word": "country",
+      "start": 13.68,
+      "end": 14.24,
+      "confidence": null
+    },
+    {
+      "word": "Well",
+      "start": 14.56,
+      "end": 14.72,
+      "confidence": null
+    },
+    {
+      "word": "that's",
+      "start": 14.72,
+      "end": 15.2,
+      "confidence": null
+    },
+    {
+      "word": "okay",
+      "start": 15.36,
+      "end": 15.68,
+      "confidence": null
+    },
+    {
+      "word": "because",
+      "start": 16.16,
+      "end": 16.56,
+      "confidence": null
+    },
+    {
+      "word": "this",
+      "start": 16.56,
+      "end": 16.8,
+      "confidence": null
+    },
+    {
+      "word": "class",
+      "start": 16.8,
+      "end": 17.36,
+      "confidence": null
+    },
+    {
+      "word": "is",
+      "start": 17.36,
+      "end": 17.44,
+      "confidence": null
+    },
+    {
+      "word": "designed",
+      "start": 17.44,
+      "end": 18.24,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 18.24,
+      "end": 18.24,
+      "confidence": null
+    },
+    {
+      "word": "meet",
+      "start": 18.24,
+      "end": 18.72,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 18.72,
+      "end": 18.8,
+      "confidence": null
+    },
+    {
+      "word": "exactly",
+      "start": 18.8,
+      "end": 19.84,
+      "confidence": null
+    },
+    {
+      "word": "where",
+      "start": 19.84,
+      "end": 20.16,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 20.16,
+      "end": 20.56,
+      "confidence": null
+    },
+    {
+      "word": "are",
+      "start": 20.64,
+      "end": 20.96,
+      "confidence": null
+    },
+    {
+      "word": "My",
+      "start": 21.68,
+      "end": 21.84,
+      "confidence": null
+    },
+    {
+      "word": "mission",
+      "start": 21.84,
+      "end": 22.4,
+      "confidence": null
+    },
+    {
+      "word": "My",
+      "start": 22.8,
+      "end": 22.96,
+      "confidence": null
+    },
+    {
+      "word": "mission",
+      "start": 22.96,
+      "end": 23.2,
+      "confidence": null
+    },
+    {
+      "word": "is",
+      "start": 23.2,
+      "end": 23.36,
+      "confidence": null
+    },
+    {
+      "word": "very",
+      "start": 23.36,
+      "end": 23.68,
+      "confidence": null
+    },
+    {
+      "word": "simple",
+      "start": 23.68,
+      "end": 24.16,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 24.64,
+      "end": 24.72,
+      "confidence": null
+    },
+    {
+      "word": "give",
+      "start": 24.72,
+      "end": 24.96,
+      "confidence": null
+    },
+    {
+      "word": "you",
+      "start": 24.96,
+      "end": 25.12,
+      "confidence": null
+    },
+    {
+      "word": "a",
+      "start": 25.12,
+      "end": 25.2,
+      "confidence": null
+    },
+    {
+      "word": "fundamental",
+      "start": 25.2,
+      "end": 26.0,
+      "confidence": null
+    },
+    {
+      "word": "understanding",
+      "start": 26.0,
+      "end": 26.72,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 26.72,
+      "end": 26.88,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 26.88,
+      "end": 26.88,
+      "confidence": null
+    },
+    {
+      "word": "law",
+      "start": 26.88,
+      "end": 27.28,
+      "confidence": null
+    },
+    {
+      "word": "of",
+      "start": 27.28,
+      "end": 27.36,
+      "confidence": null
+    },
+    {
+      "word": "contracts",
+      "start": 27.36,
+      "end": 28.0,
+      "confidence": null
+    },
+    {
+      "word": "in",
+      "start": 28.0,
+      "end": 28.16,
+      "confidence": null
+    },
+    {
+      "word": "the",
+      "start": 28.16,
+      "end": 28.32,
+      "confidence": null
+    },
+    {
+      "word": "US",
+      "start": 28.4,
+      "end": 28.8,
+      "confidence": null
+    },
+    {
+      "word": "and",
+      "start": 29.2,
+      "end": 29.36,
+      "confidence": null
+    },
+    {
+      "word": "to",
+      "start": 29.36,
+      "end": 29.44,
+      "confidence": null
+    },
+    {
+      "word": "highlight",
+      "start": 29.44,
+      "end": 30.0,
+      "confidence": null
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded models (too large for git)
+vosk-model-*/
+*.ckpt
+*.bin
+*.safetensors
+
+# Third-party cloned repos
+third_party/
+
+# Conda/mamba environments
+micromamba/
+.mamba/
+
+# OS files
+.DS_Store
+
+# Type stubs (auto-generated)
+typings/
+
+# Pyright config (local)
+pyrightconfig.json
+
+# Temporary WAV conversions
+*.tmp.wav

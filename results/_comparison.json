@@ -1,0 +1,4313 @@
+{
+  "en": {
+    "models": [
+      "ctc-forced-aligner (MMS-300M)",
+      "faster-whisper (native timestamps, base)",
+      "mfa v3 (english_mfa)",
+      "parakeet-tdt-0.6b-v3 (mlx)",
+      "qwen3-forced-aligner (0.6B, mlx-audio)",
+      "stable-ts (align mode, base)",
+      "vosk (vosk-model-small-en-us-0.15)",
+      "whisper-char-align (stable-ts, large-v3)",
+      "whisperx (wav2vec2 align, base)"
+    ],
+    "performance": [
+      {
+        "model": "ctc-forced-aligner (MMS-300M)",
+        "inference_time": 4.5511261250358075,
+        "load_time": 1.6582622500136495,
+        "peak_memory_mb": 3211.28125,
+        "word_count": 80
+      },
+      {
+        "model": "faster-whisper (native timestamps, base)",
+        "inference_time": 2.6540589588694274,
+        "load_time": 0.8342064579483122,
+        "peak_memory_mb": 599.0625,
+        "word_count": 81
+      },
+      {
+        "model": "mfa v3 (english_mfa)",
+        "inference_time": 35.058158,
+        "load_time": 0.0,
+        "peak_memory_mb": 0.0,
+        "word_count": 82
+      },
+      {
+        "model": "parakeet-tdt-0.6b-v3 (mlx)",
+        "inference_time": 3.432565,
+        "load_time": 2.451029,
+        "peak_memory_mb": 1.901,
+        "word_count": 80
+      },
+      {
+        "model": "qwen3-forced-aligner (0.6B, mlx-audio)",
+        "inference_time": 2.69117,
+        "load_time": 2.885986,
+        "peak_memory_mb": 2745.341,
+        "word_count": 80
+      },
+      {
+        "model": "stable-ts (align mode, base)",
+        "inference_time": 4.011805,
+        "load_time": 0.735069,
+        "peak_memory_mb": 35.631,
+        "word_count": 80
+      },
+      {
+        "model": "vosk (vosk-model-small-en-us-0.15)",
+        "inference_time": 2.672313,
+        "load_time": 0.274521,
+        "peak_memory_mb": 0.042,
+        "word_count": 80
+      },
+      {
+        "model": "whisper-char-align (stable-ts, large-v3)",
+        "inference_time": 20.130431,
+        "load_time": 15.45413,
+        "peak_memory_mb": 29.39,
+        "word_count": 80
+      },
+      {
+        "model": "whisperx (wav2vec2 align, base)",
+        "inference_time": 1.1031654169782996,
+        "load_time": 21.580391499912366,
+        "peak_memory_mb": 288.43888568878174,
+        "word_count": 78
+      }
+    ],
+    "aligned_words": [
+      {
+        "word": "well",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 1.08,
+            "end": 1.21
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 0.0,
+            "end": 1.22
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 0.6199999999999977,
+            "end": 1.18
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 0.8,
+            "end": 1.2
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 1.12,
+            "end": 1.28
+          },
+          "stable-ts (align mode, base)": {
+            "start": 0.8,
+            "end": 1.3
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 0.6,
+            "end": 1.2
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 1.094,
+            "end": 1.274
+          }
+        }
+      },
+      {
+        "word": "hello",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 1.21,
+            "end": 1.57
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 1.22,
+            "end": 1.52
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 1.18,
+            "end": 1.46
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 1.2,
+            "end": 1.52
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 1.28,
+            "end": 1.6
+          },
+          "stable-ts (align mode, base)": {
+            "start": 1.46,
+            "end": 1.46
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 1.249685,
+            "end": 1.56
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 1.44,
+            "end": 1.44
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 1.294,
+            "end": 1.555
+          }
+        }
+      },
+      {
+        "word": "and",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 1.57,
+            "end": 1.71
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 1.52,
+            "end": 1.7
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 1.46,
+            "end": 1.66
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 1.6,
+            "end": 1.76
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 1.6,
+            "end": 1.76
+          },
+          "stable-ts (align mode, base)": {
+            "start": 1.46,
+            "end": 1.66
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 1.56,
+            "end": 1.68
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 1.44,
+            "end": 1.66
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 1.615,
+            "end": 1.715
+          }
+        }
+      },
+      {
+        "word": "welcome",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 1.71,
+            "end": 2.15
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 1.7,
+            "end": 2.32
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 1.66,
+            "end": 2.12
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 1.76,
+            "end": 2.3200000000000003
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 1.76,
+            "end": 2.48
+          },
+          "stable-ts (align mode, base)": {
+            "start": 1.66,
+            "end": 2.5
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 1.68,
+            "end": 2.28
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 1.66,
+            "end": 2.12
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 1.755,
+            "end": 2.235
+          }
+        }
+      },
+      {
+        "word": "welcome",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 2.44,
+            "end": 2.73
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 2.32,
+            "end": 2.72
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 2.48,
+            "end": 2.68
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 2.32,
+            "end": 2.64
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.48,
+            "end": 2.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.52,
+            "end": 2.68
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 2.4,
+            "end": 2.76
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.44,
+            "end": 2.6
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 2.476,
+            "end": 2.756
+          }
+        }
+      },
+      {
+        "word": "to",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 2.73,
+            "end": 3.0
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 2.74,
+            "end": 2.84
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 2.68,
+            "end": 2.82
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 2.64,
+            "end": 2.88
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.8,
+            "end": 2.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.68,
+            "end": 2.82
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 2.76,
+            "end": 2.82
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.6,
+            "end": 2.8
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 2.776,
+            "end": 2.816
+          }
+        }
+      },
+      {
+        "word": "u",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 3.0,
+            "end": 3.03
+          }
+        }
+      },
+      {
+        "word": "s",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 3.03,
+            "end": 3.19
+          }
+        }
+      },
+      {
+        "word": "contract",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 3.19,
+            "end": 3.89
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 3.18,
+            "end": 3.86
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 3.06,
+            "end": 3.64
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 3.2800000000000002,
+            "end": 3.8400000000000003
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 3.2,
+            "end": 3.92
+          },
+          "stable-ts (align mode, base)": {
+            "start": 3.64,
+            "end": 3.64
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 3.21,
+            "end": 3.87
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 3.32,
+            "end": 3.56
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 3.297,
+            "end": 3.857
+          }
+        }
+      },
+      {
+        "word": "law",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 3.89,
+            "end": 4.12
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 3.86,
+            "end": 4.1
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 3.64,
+            "end": 4.06
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 3.84,
+            "end": 4.16
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 3.92,
+            "end": 4.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 3.64,
+            "end": 4.04
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 3.87,
+            "end": 4.14
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 3.56,
+            "end": 4.02
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 3.937,
+            "end": 4.158
+          }
+        }
+      },
+      {
+        "word": "for",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 4.12,
+            "end": 4.29
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 4.1,
+            "end": 4.3
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 4.06,
+            "end": 4.28
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 4.16,
+            "end": 4.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 4.16,
+            "end": 4.32
+          },
+          "stable-ts (align mode, base)": {
+            "start": 4.04,
+            "end": 4.28
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 4.17,
+            "end": 4.32
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 4.02,
+            "end": 4.26
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 4.218,
+            "end": 4.338
+          }
+        }
+      },
+      {
+        "word": "the",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 4.29,
+            "end": 4.41
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 4.3,
+            "end": 4.44
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 4.28,
+            "end": 4.44
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 4.32,
+            "end": 4.5600000000000005
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 4.32,
+            "end": 4.48
+          },
+          "stable-ts (align mode, base)": {
+            "start": 4.28,
+            "end": 4.42
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 4.32,
+            "end": 4.44
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 4.26,
+            "end": 4.42
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 4.378,
+            "end": 4.458
+          }
+        }
+      },
+      {
+        "word": "bar",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 4.41,
+            "end": 4.88
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 4.44,
+            "end": 5.0
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 4.44,
+            "end": 4.7
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 4.5600000000000005,
+            "end": 5.04
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 4.48,
+            "end": 4.96
+          },
+          "stable-ts (align mode, base)": {
+            "start": 4.42,
+            "end": 4.72
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 4.44,
+            "end": 4.92
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 4.42,
+            "end": 4.72
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 4.518,
+            "end": 4.838
+          }
+        }
+      },
+      {
+        "word": "my",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 5.2,
+            "end": 5.35
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 5.0,
+            "end": 5.32
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 5.22,
+            "end": 5.32
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 5.04,
+            "end": 5.2
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 5.28,
+            "end": 5.44
+          },
+          "stable-ts (align mode, base)": {
+            "start": 5.32,
+            "end": 5.32
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 5.19,
+            "end": 5.34
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 5.2,
+            "end": 5.3
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 5.259,
+            "end": 5.339
+          }
+        }
+      },
+      {
+        "word": "name",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 5.35,
+            "end": 5.45
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 5.32,
+            "end": 5.46
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 5.32,
+            "end": 5.42
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 5.2,
+            "end": 5.44
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 5.44,
+            "end": 5.52
+          },
+          "stable-ts (align mode, base)": {
+            "start": 5.32,
+            "end": 5.42
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 5.34,
+            "end": 5.46
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 5.3,
+            "end": 5.44
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 5.359,
+            "end": 5.479
+          }
+        }
+      },
+      {
+        "word": "is",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 5.45,
+            "end": 5.57
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 5.48,
+            "end": 5.56
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 5.42,
+            "end": 5.6
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 5.44,
+            "end": 5.6000000000000005
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 5.52,
+            "end": 5.6
+          },
+          "stable-ts (align mode, base)": {
+            "start": 5.42,
+            "end": 5.58
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 5.46,
+            "end": 5.58
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 5.44,
+            "end": 5.56
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 5.539,
+            "end": 5.599
+          }
+        }
+      },
+      {
+        "word": "mike",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 5.57,
+            "end": 5.84
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 5.56,
+            "end": 5.9
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 5.6,
+            "end": 5.78
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 5.6000000000000005,
+            "end": 5.92
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 5.6,
+            "end": 5.92
+          },
+          "stable-ts (align mode, base)": {
+            "start": 5.58,
+            "end": 5.78
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 5.58,
+            "end": 5.88
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 5.56,
+            "end": 5.82
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 5.639,
+            "end": 5.859
+          }
+        }
+      },
+      {
+        "word": "sims",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 5.84,
+            "end": 6.46
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 5.9,
+            "end": 6.5
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 5.78,
+            "end": 6.1
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 5.92,
+            "end": 6.640000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 5.92,
+            "end": 6.56
+          },
+          "stable-ts (align mode, base)": {
+            "start": 5.78,
+            "end": 6.18
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 5.88,
+            "end": 6.51
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 5.82,
+            "end": 6.32
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 5.96,
+            "end": 6.4
+          }
+        }
+      },
+      {
+        "word": "and",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 6.61,
+            "end": 6.71
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 6.5,
+            "end": 6.76
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 6.1,
+            "end": 6.7
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 6.640000000000001,
+            "end": 6.800000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.64,
+            "end": 6.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.62,
+            "end": 6.7
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 6.6,
+            "end": 6.75
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.6,
+            "end": 6.7
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 6.66,
+            "end": 6.74
+          }
+        }
+      },
+      {
+        "word": "i",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 6.71,
+            "end": 6.88
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 6.76,
+            "end": 6.84
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 6.7,
+            "end": 6.82
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 6.8,
+            "end": 6.96
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.8,
+            "end": 6.88
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.7,
+            "end": 6.82
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 6.75,
+            "end": 6.9
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.7,
+            "end": 6.84
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 6.821,
+            "end": 6.861
+          }
+        }
+      },
+      {
+        "word": "am",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 6.88,
+            "end": 7.1
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 6.84,
+            "end": 7.06
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 6.82,
+            "end": 7.0
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 6.96,
+            "end": 7.12
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.88,
+            "end": 7.12
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.82,
+            "end": 6.98
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 6.9,
+            "end": 7.02
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.84,
+            "end": 7.0
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 6.941,
+            "end": 7.021
+          }
+        }
+      },
+      {
+        "word": "genuinely",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 7.1,
+            "end": 7.74
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 7.06,
+            "end": 7.72
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 7.0,
+            "end": 7.58
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 7.12,
+            "end": 7.760000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 7.12,
+            "end": 7.76
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.98,
+            "end": 7.56
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 7.02,
+            "end": 7.74
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 7.0,
+            "end": 7.52
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.221,
+            "end": 7.762
+          }
+        }
+      },
+      {
+        "word": "excited",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 7.74,
+            "end": 8.36
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 7.72,
+            "end": 8.28
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 7.58,
+            "end": 8.2
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 7.76,
+            "end": 8.24
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 7.76,
+            "end": 8.32
+          },
+          "stable-ts (align mode, base)": {
+            "start": 7.56,
+            "end": 8.18
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 7.74,
+            "end": 8.34
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 7.52,
+            "end": 8.08
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.822,
+            "end": 8.302
+          }
+        }
+      },
+      {
+        "word": "to",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 8.36,
+            "end": 8.39
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.28,
+            "end": 8.38
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 8.2,
+            "end": 8.38
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 8.24,
+            "end": 8.4
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 8.4,
+            "end": 8.4
+          },
+          "stable-ts (align mode, base)": {
+            "start": 8.18,
+            "end": 8.38
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 8.34,
+            "end": 8.43
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 8.08,
+            "end": 8.38
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 8.362,
+            "end": 8.422
+          }
+        }
+      },
+      {
+        "word": "be",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 8.39,
+            "end": 8.52
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.38,
+            "end": 8.52
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 8.38,
+            "end": 8.52
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 8.4,
+            "end": 8.64
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 8.4,
+            "end": 8.56
+          },
+          "stable-ts (align mode, base)": {
+            "start": 8.38,
+            "end": 8.52
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 8.43,
+            "end": 8.55
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 8.38,
+            "end": 8.52
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 8.482,
+            "end": 8.583
+          }
+        }
+      },
+      {
+        "word": "your",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 8.52,
+            "end": 8.74
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.52,
+            "end": 8.76
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 8.52,
+            "end": 8.72
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 8.64,
+            "end": 8.88
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 8.56,
+            "end": 8.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 8.52,
+            "end": 8.72
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 8.55,
+            "end": 8.76
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 8.52,
+            "end": 8.7
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 8.623,
+            "end": 8.783
+          }
+        }
+      },
+      {
+        "word": "guide",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 8.74,
+            "end": 9.2
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.76,
+            "end": 9.14
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 8.72,
+            "end": 9.04
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 8.88,
+            "end": 9.280000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 8.8,
+            "end": 9.2
+          },
+          "stable-ts (align mode, base)": {
+            "start": 8.72,
+            "end": 9.02
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 8.76,
+            "end": 9.18
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 8.7,
+            "end": 9.06
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 8.843,
+            "end": 9.143
+          }
+        }
+      },
+      {
+        "word": "for",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 9.2,
+            "end": 9.28
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 9.14,
+            "end": 9.28
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 9.04,
+            "end": 9.28
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 9.28,
+            "end": 9.52
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 9.2,
+            "end": 9.36
+          },
+          "stable-ts (align mode, base)": {
+            "start": 9.02,
+            "end": 9.28
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 9.18,
+            "end": 9.3
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 9.06,
+            "end": 9.26
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 9.223,
+            "end": 9.323
+          }
+        }
+      },
+      {
+        "word": "this",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 9.28,
+            "end": 9.54
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 9.28,
+            "end": 9.52
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 9.28,
+            "end": 9.5
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 9.52,
+            "end": 9.68
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 9.36,
+            "end": 9.6
+          },
+          "stable-ts (align mode, base)": {
+            "start": 9.28,
+            "end": 9.48
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 9.3,
+            "end": 9.54
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 9.26,
+            "end": 9.5
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 9.363,
+            "end": 9.524
+          }
+        }
+      },
+      {
+        "word": "course",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 9.54,
+            "end": 10.02
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 9.52,
+            "end": 10.18
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 9.5,
+            "end": 9.86
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 9.68,
+            "end": 10.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 9.6,
+            "end": 10.08
+          },
+          "stable-ts (align mode, base)": {
+            "start": 9.48,
+            "end": 9.58
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 9.54,
+            "end": 10.08
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 9.5,
+            "end": 9.6
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 9.624,
+            "end": 10.385
+          }
+        }
+      },
+      {
+        "word": "now",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 10.36,
+            "end": 10.6
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 10.18,
+            "end": 10.8
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 10.38,
+            "end": 10.5
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 10.32,
+            "end": 10.88
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 10.4,
+            "end": 10.64
+          },
+          "stable-ts (align mode, base)": {
+            "start": 10.38,
+            "end": 10.56
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 10.35,
+            "end": 10.65
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 10.34,
+            "end": 10.56
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 10.405,
+            "end": 10.585
+          }
+        }
+      },
+      {
+        "word": "i",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 11.01,
+            "end": 11.14
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 10.8,
+            "end": 11.12
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 10.5,
+            "end": 11.12
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 10.88,
+            "end": 11.200000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 11.04,
+            "end": 11.2
+          },
+          "stable-ts (align mode, base)": {
+            "start": 11.1,
+            "end": 11.12
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 11.01,
+            "end": 11.13
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 11.0,
+            "end": 11.1
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 11.105,
+            "end": 11.166
+          }
+        }
+      },
+      {
+        "word": "realize",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 11.14,
+            "end": 11.82
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 11.12,
+            "end": 11.86
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 11.12,
+            "end": 11.44
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 11.200000000000001,
+            "end": 11.92
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 11.2,
+            "end": 11.92
+          },
+          "stable-ts (align mode, base)": {
+            "start": 11.12,
+            "end": 11.44
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 11.13,
+            "end": 11.88
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 11.1,
+            "end": 11.5
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 11.206,
+            "end": 11.666
+          }
+        }
+      },
+      {
+        "word": "that",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 11.98,
+            "end": 12.04
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 11.86,
+            "end": 12.2
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 11.44,
+            "end": 12.14
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 11.92,
+            "end": 12.16
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 12.0,
+            "end": 12.24
+          },
+          "stable-ts (align mode, base)": {
+            "start": 11.44,
+            "end": 12.14
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 12.0,
+            "end": 12.21
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 11.5,
+            "end": 12.16
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 11.706,
+            "end": 12.227
+          }
+        }
+      },
+      {
+        "word": "you",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 12.04,
+            "end": 12.39
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 12.2,
+            "end": 12.38
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 12.14,
+            "end": 12.36
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 12.16,
+            "end": 12.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 12.24,
+            "end": 12.4
+          },
+          "stable-ts (align mode, base)": {
+            "start": 12.14,
+            "end": 12.36
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 12.21,
+            "end": 12.42
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 12.16,
+            "end": 12.34
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 12.287,
+            "end": 12.427
+          }
+        }
+      },
+      {
+        "word": "may",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 12.39,
+            "end": 12.57
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 12.38,
+            "end": 12.54
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 12.36,
+            "end": 12.52
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 12.32,
+            "end": 12.56
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 12.4,
+            "end": 12.64
+          },
+          "stable-ts (align mode, base)": {
+            "start": 12.36,
+            "end": 12.52
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 12.42,
+            "end": 12.6
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 12.34,
+            "end": 12.52
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 12.467,
+            "end": 12.587
+          }
+        }
+      },
+      {
+        "word": "have",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 12.57,
+            "end": 12.64
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 12.54,
+            "end": 12.68
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 12.52,
+            "end": 12.64
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 12.56,
+            "end": 12.72
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 12.64,
+            "end": 12.72
+          },
+          "stable-ts (align mode, base)": {
+            "start": 12.52,
+            "end": 12.64
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 12.6,
+            "end": 12.66
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 12.52,
+            "end": 12.64
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 12.607,
+            "end": 12.707
+          }
+        }
+      },
+      {
+        "word": "studied",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 12.64,
+            "end": 13.06
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 12.68,
+            "end": 13.04
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 12.64,
+            "end": 12.94
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 12.72,
+            "end": 13.040000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 12.72,
+            "end": 13.12
+          },
+          "stable-ts (align mode, base)": {
+            "start": 12.64,
+            "end": 12.92
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 12.66,
+            "end": 13.08
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 12.64,
+            "end": 12.94
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 12.747,
+            "end": 13.068
+          }
+        }
+      },
+      {
+        "word": "law",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 13.06,
+            "end": 13.28
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 13.04,
+            "end": 13.24
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 12.94,
+            "end": 13.22
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 13.040000000000001,
+            "end": 13.280000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 13.12,
+            "end": 13.28
+          },
+          "stable-ts (align mode, base)": {
+            "start": 12.92,
+            "end": 13.22
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 13.08,
+            "end": 13.261843
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 12.94,
+            "end": 13.22
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 13.088,
+            "end": 13.288
+          }
+        }
+      },
+      {
+        "word": "in",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 13.28,
+            "end": 13.34
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 13.24,
+            "end": 13.34
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 13.22,
+            "end": 13.34
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 13.280000000000001,
+            "end": 13.440000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 13.28,
+            "end": 13.36
+          },
+          "stable-ts (align mode, base)": {
+            "start": 13.22,
+            "end": 13.34
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 13.22,
+            "end": 13.34
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 13.328,
+            "end": 13.368
+          }
+        }
+      },
+      {
+        "word": "another",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 13.34,
+            "end": 13.68
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 13.34,
+            "end": 13.66
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 13.34,
+            "end": 13.52
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 13.44,
+            "end": 13.84
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 13.36,
+            "end": 13.68
+          },
+          "stable-ts (align mode, base)": {
+            "start": 13.34,
+            "end": 13.52
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 13.38,
+            "end": 13.68
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 13.34,
+            "end": 13.56
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 13.428,
+            "end": 13.708
+          }
+        }
+      },
+      {
+        "word": "country",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 13.68,
+            "end": 14.12
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 13.66,
+            "end": 14.3
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 13.52,
+            "end": 14.08
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 13.84,
+            "end": 14.48
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 13.68,
+            "end": 14.24
+          },
+          "stable-ts (align mode, base)": {
+            "start": 13.52,
+            "end": 13.9
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 13.68,
+            "end": 14.25
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 13.56,
+            "end": 13.9
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 13.748,
+            "end": 14.189
+          }
+        }
+      },
+      {
+        "word": "well",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 14.56,
+            "end": 14.76
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 14.3,
+            "end": 14.7
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 14.46,
+            "end": 14.64
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 14.48,
+            "end": 14.8
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 14.56,
+            "end": 14.72
+          },
+          "stable-ts (align mode, base)": {
+            "start": 14.56,
+            "end": 14.74
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 14.52,
+            "end": 14.68
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 14.569,
+            "end": 14.79
+          }
+        }
+      },
+      {
+        "word": "that's",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 14.76,
+            "end": 15.15
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 14.7,
+            "end": 15.14
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 14.64,
+            "end": 15.16
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 14.8,
+            "end": 15.440000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 14.72,
+            "end": 15.2
+          },
+          "stable-ts (align mode, base)": {
+            "start": 14.84,
+            "end": 15.14
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 14.697897,
+            "end": 15.15
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 14.76,
+            "end": 15.14
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 14.81,
+            "end": 15.15
+          }
+        }
+      },
+      {
+        "word": "okay",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 15.38,
+            "end": 15.55
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 15.14,
+            "end": 15.82
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 15.16,
+            "end": 15.5
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 15.44,
+            "end": 16.16
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 15.36,
+            "end": 15.68
+          },
+          "stable-ts (align mode, base)": {
+            "start": 15.14,
+            "end": 15.56
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 15.15,
+            "end": 15.69
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 15.14,
+            "end": 15.56
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 15.25,
+            "end": 15.651
+          }
+        }
+      },
+      {
+        "word": "because",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 16.09,
+            "end": 16.49
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 15.82,
+            "end": 16.48
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 15.5,
+            "end": 16.3
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 16.16,
+            "end": 16.48
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 16.16,
+            "end": 16.56
+          },
+          "stable-ts (align mode, base)": {
+            "start": 16.1,
+            "end": 16.3
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 16.08,
+            "end": 16.5
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 16.1,
+            "end": 16.26
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 16.151,
+            "end": 16.452
+          }
+        }
+      },
+      {
+        "word": "this",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 16.49,
+            "end": 16.780001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 16.48,
+            "end": 16.76
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 16.3,
+            "end": 16.64
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 16.48,
+            "end": 16.8
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 16.56,
+            "end": 16.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 16.3,
+            "end": 16.64
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 16.5,
+            "end": 16.8
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 16.26,
+            "end": 16.72
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 16.572,
+            "end": 16.772
+          }
+        }
+      },
+      {
+        "word": "class",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 16.780001,
+            "end": 17.299999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 16.76,
+            "end": 17.26
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 16.64,
+            "end": 17.08
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 16.8,
+            "end": 17.36
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 16.8,
+            "end": 17.36
+          },
+          "stable-ts (align mode, base)": {
+            "start": 16.64,
+            "end": 17.08
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 16.8,
+            "end": 17.31
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 16.72,
+            "end": 17.12
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 16.872,
+            "end": 17.293
+          }
+        }
+      },
+      {
+        "word": "is",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 17.299999,
+            "end": 17.440001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 17.26,
+            "end": 17.44
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 17.08,
+            "end": 17.4
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 17.36,
+            "end": 17.599999999999998
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 17.36,
+            "end": 17.44
+          },
+          "stable-ts (align mode, base)": {
+            "start": 17.08,
+            "end": 17.38
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 17.31,
+            "end": 17.46
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 17.12,
+            "end": 17.42
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 17.393,
+            "end": 17.453
+          }
+        }
+      },
+      {
+        "word": "designed",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 17.440001,
+            "end": 18.200001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 17.44,
+            "end": 18.16
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 17.4,
+            "end": 17.94
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 17.6,
+            "end": 18.16
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 17.44,
+            "end": 18.24
+          },
+          "stable-ts (align mode, base)": {
+            "start": 17.5,
+            "end": 17.88
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 17.46,
+            "end": 18.18
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 17.5,
+            "end": 17.98
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 17.553,
+            "end": 18.174
+          }
+        }
+      },
+      {
+        "word": "to",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 18.200001,
+            "end": 18.23
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 18.16,
+            "end": 18.26
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 17.94,
+            "end": 18.26
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 18.16,
+            "end": 18.4
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 18.24,
+            "end": 18.24
+          },
+          "stable-ts (align mode, base)": {
+            "start": 17.88,
+            "end": 18.26
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 18.18,
+            "end": 18.27
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 17.98,
+            "end": 18.26
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 18.214,
+            "end": 18.294
+          }
+        }
+      },
+      {
+        "word": "meet",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 18.23,
+            "end": 18.66
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 18.26,
+            "end": 18.58
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 18.26,
+            "end": 18.46
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 18.400000000000002,
+            "end": 18.799999999999997
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 18.24,
+            "end": 18.72
+          },
+          "stable-ts (align mode, base)": {
+            "start": 18.26,
+            "end": 18.46
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 18.27,
+            "end": 18.6
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 18.26,
+            "end": 18.5
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 18.354,
+            "end": 18.594
+          }
+        }
+      },
+      {
+        "word": "you",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 18.66,
+            "end": 18.82
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 18.58,
+            "end": 18.78
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 18.46,
+            "end": 18.74
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 18.8,
+            "end": 19.12
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 18.72,
+            "end": 18.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 18.46,
+            "end": 18.74
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 18.6,
+            "end": 18.81
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 18.5,
+            "end": 18.72
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 18.654,
+            "end": 18.814
+          }
+        }
+      },
+      {
+        "word": "exactly",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 18.82,
+            "end": 19.780001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 18.78,
+            "end": 19.76
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 18.74,
+            "end": 19.34
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 19.12,
+            "end": 20.0
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 18.8,
+            "end": 19.84
+          },
+          "stable-ts (align mode, base)": {
+            "start": 18.74,
+            "end": 19.34
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 18.81,
+            "end": 19.8
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 18.72,
+            "end": 19.4
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 18.954,
+            "end": 19.775
+          }
+        }
+      },
+      {
+        "word": "where",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 19.780001,
+            "end": 20.1
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 19.76,
+            "end": 20.18
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 19.34,
+            "end": 20.02
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 20.0,
+            "end": 20.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 19.84,
+            "end": 20.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 19.34,
+            "end": 20.0
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 19.8,
+            "end": 20.16
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 19.4,
+            "end": 20.04
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 19.895,
+            "end": 20.156
+          }
+        }
+      },
+      {
+        "word": "you",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 20.1,
+            "end": 20.540001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 20.18,
+            "end": 20.5
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 20.02,
+            "end": 20.46
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 20.32,
+            "end": 20.64
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 20.16,
+            "end": 20.56
+          },
+          "stable-ts (align mode, base)": {
+            "start": 20.0,
+            "end": 20.42
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 20.19,
+            "end": 20.49
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 20.04,
+            "end": 20.36
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 20.296,
+            "end": 20.476
+          }
+        }
+      },
+      {
+        "word": "are",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 20.59,
+            "end": 20.809999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 20.5,
+            "end": 21.28
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 20.46,
+            "end": 20.8
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 20.64,
+            "end": 21.52
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 20.64,
+            "end": 20.96
+          },
+          "stable-ts (align mode, base)": {
+            "start": 20.42,
+            "end": 20.82
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 20.49,
+            "end": 20.97
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 20.36,
+            "end": 20.82
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 20.797,
+            "end": 20.897
+          }
+        }
+      },
+      {
+        "word": "my",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 21.620001,
+            "end": 21.799999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 21.28,
+            "end": 21.8
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 21.54,
+            "end": 21.76
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 21.52,
+            "end": 21.84
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 21.68,
+            "end": 21.84
+          },
+          "stable-ts (align mode, base)": {
+            "start": 21.62,
+            "end": 21.76
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 21.6,
+            "end": 21.81
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 21.62,
+            "end": 21.76
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 21.718,
+            "end": 21.838
+          }
+        }
+      },
+      {
+        "word": "mission",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 21.799999,
+            "end": 22.32
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 21.8,
+            "end": 22.46
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 21.76,
+            "end": 22.1
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 21.84,
+            "end": 22.64
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 21.84,
+            "end": 22.4
+          },
+          "stable-ts (align mode, base)": {
+            "start": 21.76,
+            "end": 22.24
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 21.81,
+            "end": 22.32
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 21.76,
+            "end": 22.2
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 21.898,
+            "end": 22.218
+          }
+        }
+      },
+      {
+        "word": "my",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 22.74,
+            "end": 22.889999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 22.46,
+            "end": 22.9
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 22.4,
+            "end": 22.88
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 22.64,
+            "end": 22.88
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 22.8,
+            "end": 22.96
+          },
+          "stable-ts (align mode, base)": {
+            "start": 22.78,
+            "end": 22.88
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 21.6,
+            "end": 21.81
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 22.76,
+            "end": 22.86
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 21.718,
+            "end": 21.838
+          }
+        }
+      },
+      {
+        "word": "mission",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 22.889999,
+            "end": 23.190001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 22.9,
+            "end": 23.18
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 22.88,
+            "end": 23.14
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 22.88,
+            "end": 23.279999999999998
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 22.96,
+            "end": 23.2
+          },
+          "stable-ts (align mode, base)": {
+            "start": 22.88,
+            "end": 23.14
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 21.81,
+            "end": 22.32
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 22.86,
+            "end": 23.12
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 21.898,
+            "end": 22.218
+          }
+        }
+      },
+      {
+        "word": "is",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 23.190001,
+            "end": 23.33
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 23.18,
+            "end": 23.32
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 23.14,
+            "end": 23.32
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 23.28,
+            "end": 23.52
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 23.2,
+            "end": 23.36
+          },
+          "stable-ts (align mode, base)": {
+            "start": 23.14,
+            "end": 23.32
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 23.22,
+            "end": 23.34
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 23.12,
+            "end": 23.3
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 22.899,
+            "end": 23.239
+          }
+        }
+      },
+      {
+        "word": "very",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 23.33,
+            "end": 23.66
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 23.32,
+            "end": 23.66
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 23.32,
+            "end": 23.6
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 23.52,
+            "end": 23.84
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 23.36,
+            "end": 23.68
+          },
+          "stable-ts (align mode, base)": {
+            "start": 23.32,
+            "end": 23.58
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 23.34,
+            "end": 23.67
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 23.3,
+            "end": 23.56
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 23.44,
+            "end": 23.68
+          }
+        }
+      },
+      {
+        "word": "simple",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 23.66,
+            "end": 24.16
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 23.66,
+            "end": 24.36
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 23.6,
+            "end": 24.08
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 23.84,
+            "end": 24.48
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 23.68,
+            "end": 24.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 23.58,
+            "end": 23.84
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 23.67,
+            "end": 24.21
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 23.56,
+            "end": 23.84
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 23.8,
+            "end": 24.16
+          }
+        }
+      },
+      {
+        "word": "to",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 24.65,
+            "end": 24.700001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 24.36,
+            "end": 24.7
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 24.52,
+            "end": 24.7
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 24.48,
+            "end": 24.72
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 24.64,
+            "end": 24.72
+          },
+          "stable-ts (align mode, base)": {
+            "start": 24.62,
+            "end": 24.7
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 24.6,
+            "end": 24.75
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 24.6,
+            "end": 24.7
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 24.681,
+            "end": 24.761
+          }
+        }
+      },
+      {
+        "word": "give",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 24.700001,
+            "end": 24.93
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 24.7,
+            "end": 24.92
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 24.7,
+            "end": 24.86
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 24.72,
+            "end": 24.96
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 24.72,
+            "end": 24.96
+          },
+          "stable-ts (align mode, base)": {
+            "start": 24.7,
+            "end": 24.86
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 24.75,
+            "end": 24.93
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 24.7,
+            "end": 24.88
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 24.801,
+            "end": 24.941
+          }
+        }
+      },
+      {
+        "word": "you",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 24.93,
+            "end": 25.08
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 24.92,
+            "end": 25.04
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 24.86,
+            "end": 25.02
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 24.96,
+            "end": 25.12
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 24.96,
+            "end": 25.12
+          },
+          "stable-ts (align mode, base)": {
+            "start": 24.86,
+            "end": 25.02
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 24.93,
+            "end": 25.08
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 24.88,
+            "end": 25.02
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 24.981,
+            "end": 25.101
+          }
+        }
+      },
+      {
+        "word": "a",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 25.08,
+            "end": 25.120001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 25.04,
+            "end": 25.16
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 25.02,
+            "end": 25.16
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 25.12,
+            "end": 25.36
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 25.12,
+            "end": 25.2
+          },
+          "stable-ts (align mode, base)": {
+            "start": 25.02,
+            "end": 25.16
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 25.08,
+            "end": 25.14
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 25.02,
+            "end": 25.16
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 25.141,
+            "end": 25.202
+          }
+        }
+      },
+      {
+        "word": "fundamental",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 25.120001,
+            "end": 25.950001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 25.16,
+            "end": 25.92
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 25.16,
+            "end": 25.64
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 25.36,
+            "end": 26.08
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 25.2,
+            "end": 26.0
+          },
+          "stable-ts (align mode, base)": {
+            "start": 25.16,
+            "end": 25.62
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 25.14,
+            "end": 25.95
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 25.16,
+            "end": 25.64
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 25.342,
+            "end": 25.982
+          }
+        }
+      },
+      {
+        "word": "understanding",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 25.950001,
+            "end": 26.719999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 25.92,
+            "end": 26.7
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 25.64,
+            "end": 26.52
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 26.080000000000002,
+            "end": 26.64
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 26.0,
+            "end": 26.72
+          },
+          "stable-ts (align mode, base)": {
+            "start": 25.62,
+            "end": 26.48
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 25.95,
+            "end": 26.73
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 25.64,
+            "end": 26.42
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 26.043,
+            "end": 26.743
+          }
+        }
+      },
+      {
+        "word": "of",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 26.719999,
+            "end": 26.799999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 26.7,
+            "end": 26.78
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 26.52,
+            "end": 26.76
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 26.64,
+            "end": 26.8
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 26.72,
+            "end": 26.88
+          },
+          "stable-ts (align mode, base)": {
+            "start": 26.48,
+            "end": 26.78
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 26.73,
+            "end": 26.82
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 26.42,
+            "end": 26.8
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 26.783,
+            "end": 26.823
+          }
+        }
+      },
+      {
+        "word": "the",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 26.799999,
+            "end": 26.860001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 26.78,
+            "end": 26.92
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 26.76,
+            "end": 26.9
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 26.8,
+            "end": 26.96
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 26.88,
+            "end": 26.88
+          },
+          "stable-ts (align mode, base)": {
+            "start": 26.78,
+            "end": 26.9
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 26.82,
+            "end": 26.91
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 26.82,
+            "end": 26.92
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 26.883,
+            "end": 26.944
+          }
+        }
+      },
+      {
+        "word": "law",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 26.860001,
+            "end": 27.059999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 26.92,
+            "end": 27.16
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 26.9,
+            "end": 27.14
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 26.96,
+            "end": 27.2
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 26.88,
+            "end": 27.28
+          },
+          "stable-ts (align mode, base)": {
+            "start": 26.98,
+            "end": 27.14
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 26.91,
+            "end": 27.21
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 26.96,
+            "end": 27.12
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 27.024,
+            "end": 27.224
+          }
+        }
+      },
+      {
+        "word": "of",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 27.059999,
+            "end": 27.360001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 27.16,
+            "end": 27.28
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 27.14,
+            "end": 27.32
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 27.2,
+            "end": 27.439999999999998
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 27.28,
+            "end": 27.36
+          },
+          "stable-ts (align mode, base)": {
+            "start": 27.14,
+            "end": 27.3
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 27.21,
+            "end": 27.3
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 27.12,
+            "end": 27.26
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 27.284,
+            "end": 27.324
+          }
+        }
+      },
+      {
+        "word": "contracts",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 27.360001,
+            "end": 28.01
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 27.28,
+            "end": 27.98
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 27.32,
+            "end": 27.78
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 27.44,
+            "end": 28.0
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 27.36,
+            "end": 28.0
+          },
+          "stable-ts (align mode, base)": {
+            "start": 27.38,
+            "end": 27.76
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 27.3,
+            "end": 28.02
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 27.26,
+            "end": 27.74
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 27.404,
+            "end": 27.985
+          }
+        }
+      },
+      {
+        "word": "in",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 28.01,
+            "end": 28.309999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 27.98,
+            "end": 28.06
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 27.78,
+            "end": 28.06
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 28.0,
+            "end": 28.16
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 28.0,
+            "end": 28.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 27.98,
+            "end": 28.08
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 28.02,
+            "end": 28.11
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 27.74,
+            "end": 28.04
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 28.065,
+            "end": 28.125
+          }
+        }
+      },
+      {
+        "word": "the",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 28.309999,
+            "end": 28.379999
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 28.06,
+            "end": 28.2
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 28.06,
+            "end": 28.16
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 28.16,
+            "end": 28.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 28.16,
+            "end": 28.32
+          },
+          "stable-ts (align mode, base)": {
+            "start": 28.08,
+            "end": 28.16
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 28.11,
+            "end": 28.17
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 28.06,
+            "end": 28.16
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 28.145,
+            "end": 28.205
+          }
+        }
+      },
+      {
+        "word": "u",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 28.379999,
+            "end": 28.49
+          }
+        }
+      },
+      {
+        "word": "s",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 28.49,
+            "end": 28.77
+          }
+        }
+      },
+      {
+        "word": "and",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 29.129999,
+            "end": 29.32
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 28.9,
+            "end": 29.26
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 28.5,
+            "end": 29.26
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 28.88,
+            "end": 29.119999999999997
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 29.2,
+            "end": 29.36
+          },
+          "stable-ts (align mode, base)": {
+            "start": 29.22,
+            "end": 29.26
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 29.13,
+            "end": 29.300603
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 29.12,
+            "end": 29.22
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 29.226,
+            "end": 29.326
+          }
+        }
+      },
+      {
+        "word": "to",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 29.32,
+            "end": 29.360001
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 29.26,
+            "end": 29.4
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 24.52,
+            "end": 24.7
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 29.12,
+            "end": 29.28
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 29.36,
+            "end": 29.44
+          },
+          "stable-ts (align mode, base)": {
+            "start": 29.26,
+            "end": 29.38
+          },
+          "vosk (vosk-model-small-en-us-0.15)": {
+            "start": 24.6,
+            "end": 24.75
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 29.22,
+            "end": 29.36
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 29.366,
+            "end": 29.426
+          }
+        }
+      },
+      {
+        "word": "highlight",
+        "timestamps": {
+          "mfa v3 (english_mfa)": {
+            "start": 29.360001,
+            "end": 30.0
+          },
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 29.4,
+            "end": 29.98
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 29.28,
+            "end": 29.68
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 29.44,
+            "end": 30.0
+          },
+          "stable-ts (align mode, base)": {
+            "start": 29.38,
+            "end": 29.76
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 29.36,
+            "end": 29.7
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 29.526,
+            "end": 29.987
+          }
+        }
+      }
+    ]
+  },
+  "ru": {
+    "models": [
+      "ctc-forced-aligner (MMS-300M)",
+      "faster-whisper (native timestamps, base)",
+      "mfa v3 (russian_mfa)",
+      "parakeet-tdt-0.6b-v3 (mlx)",
+      "qwen3-forced-aligner (0.6B, mlx-audio)",
+      "stable-ts (align mode, base)",
+      "vosk (vosk-model-ru-0.42)",
+      "whisper-char-align (stable-ts, large-v3)",
+      "whisperx (wav2vec2 align, base)"
+    ],
+    "performance": [
+      {
+        "model": "ctc-forced-aligner (MMS-300M)",
+        "inference_time": 0.7465065841097385,
+        "load_time": 1.6582622500136495,
+        "peak_memory_mb": 3263.6875,
+        "word_count": 25
+      },
+      {
+        "model": "faster-whisper (native timestamps, base)",
+        "inference_time": 1.0771784170065075,
+        "load_time": 0.8342064579483122,
+        "peak_memory_mb": 599.90625,
+        "word_count": 22
+      },
+      {
+        "model": "mfa v3 (russian_mfa)",
+        "inference_time": 190.800463,
+        "load_time": 0.0,
+        "peak_memory_mb": 0.0,
+        "word_count": 25
+      },
+      {
+        "model": "parakeet-tdt-0.6b-v3 (mlx)",
+        "inference_time": 0.587649,
+        "load_time": 2.451029,
+        "peak_memory_mb": 0.627,
+        "word_count": 24
+      },
+      {
+        "model": "qwen3-forced-aligner (0.6B, mlx-audio)",
+        "inference_time": 0.248902,
+        "load_time": 2.885986,
+        "peak_memory_mb": 2745.341,
+        "word_count": 25
+      },
+      {
+        "model": "stable-ts (align mode, base)",
+        "inference_time": 0.613244,
+        "load_time": 0.735069,
+        "peak_memory_mb": 2.312,
+        "word_count": 25
+      },
+      {
+        "model": "vosk (vosk-model-ru-0.42)",
+        "inference_time": 0.993105,
+        "load_time": 28.426954,
+        "peak_memory_mb": 0.018,
+        "word_count": 24
+      },
+      {
+        "model": "whisper-char-align (stable-ts, large-v3)",
+        "inference_time": 4.218417,
+        "load_time": 15.45413,
+        "peak_memory_mb": 1.66,
+        "word_count": 25
+      },
+      {
+        "model": "whisperx (wav2vec2 align, base)",
+        "inference_time": 0.792422957951203,
+        "load_time": 3.5517430829349905,
+        "peak_memory_mb": 17.352214813232422,
+        "word_count": 23
+      }
+    ],
+    "aligned_words": [
+      {
+        "word": "Новый",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 0.0,
+            "end": 0.336
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 0.0,
+            "end": 0.3
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 0.0,
+            "end": 0.32
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 0.16,
+            "end": 0.4
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 0.0,
+            "end": 0.32
+          },
+          "stable-ts (align mode, base)": {
+            "start": 0.18,
+            "end": 0.32
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 0.026403,
+            "end": 0.36
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 0.16,
+            "end": 0.28
+          }
+        }
+      },
+      {
+        "word": "год",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 0.336,
+            "end": 0.567
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 0.3,
+            "end": 0.48
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 0.32,
+            "end": 0.56
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 0.4,
+            "end": 0.64
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 0.32,
+            "end": 0.56
+          },
+          "stable-ts (align mode, base)": {
+            "start": 0.32,
+            "end": 0.48
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 0.36,
+            "end": 0.6
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 0.28,
+            "end": 0.46
+          }
+        }
+      },
+      {
+        "word": "и",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 0.567,
+            "end": 0.609
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 0.56,
+            "end": 0.59
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 0.56,
+            "end": 0.64
+          },
+          "stable-ts (align mode, base)": {
+            "start": 0.48,
+            "end": 0.66
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 0.6,
+            "end": 0.62955
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 0.46,
+            "end": 0.58
+          }
+        }
+      },
+      {
+        "word": "Рождество,",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 0.609,
+            "end": 1.68
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 0.48,
+            "end": 1.14
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 0.59,
+            "end": 1.48
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 0.64,
+            "end": 1.28
+          },
+          "stable-ts (align mode, base)": {
+            "start": 0.66,
+            "end": 1.11
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 0.62955,
+            "end": 1.47
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 0.58,
+            "end": 1.03
+          }
+        }
+      },
+      {
+        "word": "о",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 1.68,
+            "end": 2.226
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 2.02,
+            "end": 2.14
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 2.04,
+            "end": 2.13
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 1.84,
+            "end": 2.08
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.08,
+            "end": 2.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.02,
+            "end": 2.12
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 2.01,
+            "end": 2.16
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.0,
+            "end": 2.1
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 2.119,
+            "end": 2.139
+          }
+        }
+      },
+      {
+        "word": "чём",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 2.226,
+            "end": 2.436
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 2.13,
+            "end": 2.35
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.16,
+            "end": 2.32
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.12,
+            "end": 2.3
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.1,
+            "end": 2.3
+          }
+        }
+      },
+      {
+        "word": "ещё",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 2.436,
+            "end": 2.667
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 2.35,
+            "end": 2.55
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.32,
+            "end": 2.56
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.3,
+            "end": 2.52
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 2.37,
+            "end": 2.58
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.3,
+            "end": 2.48
+          }
+        }
+      },
+      {
+        "word": "можно",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 2.667,
+            "end": 2.94
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 2.52,
+            "end": 2.74
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 2.55,
+            "end": 2.81
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 2.64,
+            "end": 2.8800000000000003
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.56,
+            "end": 2.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.52,
+            "end": 2.74
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 2.58,
+            "end": 2.85
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.48,
+            "end": 2.7
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 2.621,
+            "end": 2.822
+          }
+        }
+      },
+      {
+        "word": "говорить,",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 2.94,
+            "end": 3.318
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 2.74,
+            "end": 3.08
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 2.81,
+            "end": 3.21
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 2.88,
+            "end": 3.2800000000000002
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 2.8,
+            "end": 3.2
+          },
+          "stable-ts (align mode, base)": {
+            "start": 2.74,
+            "end": 3.16
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 2.85,
+            "end": 3.21
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 2.7,
+            "end": 3.16
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 2.862,
+            "end": 3.224
+          }
+        }
+      },
+      {
+        "word": "кроме",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 3.318,
+            "end": 3.675
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 3.14,
+            "end": 3.46
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 3.21,
+            "end": 3.51
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 3.2800000000000002,
+            "end": 3.6799999999999997
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 3.2,
+            "end": 3.52
+          },
+          "stable-ts (align mode, base)": {
+            "start": 3.32,
+            "end": 3.46
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 3.21,
+            "end": 3.54
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 3.32,
+            "end": 3.46
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 3.264,
+            "end": 3.525
+          }
+        }
+      },
+      {
+        "word": "как",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 3.675,
+            "end": 4.137
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 3.46,
+            "end": 3.8
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 3.51,
+            "end": 3.93
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 3.68,
+            "end": 3.92
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 3.52,
+            "end": 3.92
+          },
+          "stable-ts (align mode, base)": {
+            "start": 3.46,
+            "end": 3.68
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 3.54,
+            "end": 3.96
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 3.46,
+            "end": 3.64
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 3.585,
+            "end": 4.107
+          }
+        }
+      },
+      {
+        "word": "о",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 4.137,
+            "end": 4.368
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 2.02,
+            "end": 2.14
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 4.1,
+            "end": 4.18
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 3.92,
+            "end": 4.08
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 4.08,
+            "end": 4.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 3.68,
+            "end": 4.16
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 4.05,
+            "end": 4.2
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 4.04,
+            "end": 4.14
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 4.167,
+            "end": 4.227
+          }
+        }
+      },
+      {
+        "word": "Гарри",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 4.368,
+            "end": 4.62
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 4.18,
+            "end": 4.37
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 4.08,
+            "end": 4.48
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 4.16,
+            "end": 4.4
+          },
+          "stable-ts (align mode, base)": {
+            "start": 4.16,
+            "end": 4.38
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 4.2,
+            "end": 4.44
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 4.14,
+            "end": 4.36
+          }
+        }
+      },
+      {
+        "word": "Поттере?",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 4.62,
+            "end": 5.754
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 4.36,
+            "end": 4.98
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 4.37,
+            "end": 4.92
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 4.48,
+            "end": 5.5200000000000005
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 4.4,
+            "end": 4.96
+          },
+          "stable-ts (align mode, base)": {
+            "start": 4.38,
+            "end": 4.64
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 4.44,
+            "end": 4.95
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 4.36,
+            "end": 4.64
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 4.488,
+            "end": 6.175
+          }
+        }
+      },
+      {
+        "word": "И",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 5.754,
+            "end": 6.489
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 6.15,
+            "end": 6.21
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 5.84,
+            "end": 6.0
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.16,
+            "end": 6.24
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.18,
+            "end": 6.24
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.08,
+            "end": 6.18
+          }
+        }
+      },
+      {
+        "word": "эта",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 6.489,
+            "end": 6.678
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 6.21,
+            "end": 6.36
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 6.0,
+            "end": 6.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.24,
+            "end": 6.4
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.24,
+            "end": 6.34
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 6.1375,
+            "end": 6.39
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.18,
+            "end": 6.3
+          }
+        }
+      },
+      {
+        "word": "замечательная",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 6.678,
+            "end": 7.266
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 6.34,
+            "end": 6.88
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 6.36,
+            "end": 6.91
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 6.32,
+            "end": 6.96
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.4,
+            "end": 6.88
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.34,
+            "end": 6.88
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 6.39,
+            "end": 6.96
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.3,
+            "end": 6.88
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 6.436,
+            "end": 6.958
+          }
+        }
+      },
+      {
+        "word": "серия",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 7.266,
+            "end": 7.623
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 6.88,
+            "end": 7.2
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 6.91,
+            "end": 7.26
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 6.96,
+            "end": 7.28
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 6.88,
+            "end": 7.28
+          },
+          "stable-ts (align mode, base)": {
+            "start": 6.88,
+            "end": 7.2
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 6.96,
+            "end": 7.29
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 6.88,
+            "end": 7.2
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.018,
+            "end": 7.3
+          }
+        }
+      },
+      {
+        "word": "книг,",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 7.623,
+            "end": 7.959
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 7.2,
+            "end": 7.6
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 7.26,
+            "end": 7.63
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 7.28,
+            "end": 7.680000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 7.28,
+            "end": 7.6
+          },
+          "stable-ts (align mode, base)": {
+            "start": 7.2,
+            "end": 7.58
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 7.29,
+            "end": 7.65
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 7.2,
+            "end": 7.58
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.38,
+            "end": 7.661
+          }
+        }
+      },
+      {
+        "word": "на",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 7.959,
+            "end": 8.085
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 7.68,
+            "end": 7.7
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 7.63,
+            "end": 7.7
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 7.68,
+            "end": 7.76
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 7.6,
+            "end": 7.68
+          },
+          "stable-ts (align mode, base)": {
+            "start": 7.64,
+            "end": 7.7
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 7.65,
+            "end": 7.74
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 7.68,
+            "end": 7.68
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.681,
+            "end": 7.781
+          }
+        }
+      },
+      {
+        "word": "мой",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.085,
+            "end": 8.232
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 7.7,
+            "end": 7.84
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 7.7,
+            "end": 7.85
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 7.76,
+            "end": 7.92
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 7.68,
+            "end": 7.84
+          },
+          "stable-ts (align mode, base)": {
+            "start": 7.7,
+            "end": 7.84
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 7.74,
+            "end": 7.86
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 7.68,
+            "end": 7.8
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.801,
+            "end": 7.902
+          }
+        }
+      },
+      {
+        "word": "взгляд,",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.253,
+            "end": 8.526
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 7.84,
+            "end": 8.02
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 7.85,
+            "end": 8.14
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 7.92,
+            "end": 8.32
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 7.84,
+            "end": 8.16
+          },
+          "stable-ts (align mode, base)": {
+            "start": 7.84,
+            "end": 8.19
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 7.86,
+            "end": 8.16
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 7.8,
+            "end": 8.06
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 7.922,
+            "end": 8.203
+          }
+        }
+      },
+      {
+        "word": "является",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 8.526,
+            "end": 9.387
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 8.24,
+            "end": 8.64
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 8.14,
+            "end": 8.83
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 8.32,
+            "end": 8.96
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 8.16,
+            "end": 8.8
+          },
+          "stable-ts (align mode, base)": {
+            "start": 8.22,
+            "end": 8.66
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 8.16,
+            "end": 8.91
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 8.38,
+            "end": 8.66
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 8.223,
+            "end": 9.207
+          }
+        }
+      },
+      {
+        "word": "лучшим",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 9.387,
+            "end": 10.017
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 8.64,
+            "end": 9.54
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 9.17,
+            "end": 9.54
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 8.96,
+            "end": 9.360000000000001
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 9.2,
+            "end": 9.52
+          },
+          "stable-ts (align mode, base)": {
+            "start": 8.66,
+            "end": 9.54
+          },
+          "vosk (vosk-model-ru-0.42)": {
+            "start": 9.12,
+            "end": 9.57
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 8.66,
+            "end": 9.52
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 9.287,
+            "end": 9.568
+          }
+        }
+      },
+      {
+        "word": "произведением",
+        "timestamps": {
+          "ctc-forced-aligner (MMS-300M)": {
+            "start": 10.017,
+            "end": 10.458
+          },
+          "faster-whisper (native timestamps, base)": {
+            "start": 9.54,
+            "end": 9.98
+          },
+          "mfa v3 (russian_mfa)": {
+            "start": 9.54,
+            "end": 10.0
+          },
+          "parakeet-tdt-0.6b-v3 (mlx)": {
+            "start": 9.44,
+            "end": 10.0
+          },
+          "qwen3-forced-aligner (0.6B, mlx-audio)": {
+            "start": 9.52,
+            "end": 10.08
+          },
+          "stable-ts (align mode, base)": {
+            "start": 9.54,
+            "end": 9.98
+          },
+          "whisper-char-align (stable-ts, large-v3)": {
+            "start": 9.52,
+            "end": 9.98
+          },
+          "whisperx (wav2vec2 align, base)": {
+            "start": 9.629,
+            "end": 9.99
+          }
+        }
+      }
+    ]
+  }
+}

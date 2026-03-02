@@ -1,0 +1,21 @@
+[workspace]
+authors = ["Aleksandr Beshkenadze <beshkenadze@gmail.com>"]
+channels = ["conda-forge"]
+name = "pipeline_python"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+kalpy = ">=0.9.0,<0.10"
+
+[pypi-dependencies]
+montreal-forced-aligner = ">=3.3.9, <4"
+silero-vad = ">=6.2.1, <7"
+mlx-audio = ">=0.2.9, <0.3"
+soundfile = "*"
+torchaudio = ">=2.10.0, <3"
+tiktoken = ">=0.12.0, <0.13"
+pgvector = ">=0.4.2, <0.5"

@@ -5,7 +5,7 @@ Benchmark of 10 word-level timestamp models for speech alignment on Apple Silico
 Tested on:
 - **English** (30s) — US Contract Law lecture
 - **Russian** (10s) — podcast excerpt
-- **Russian** (19 min) — full podcast episode, end-to-end pipeline
+- **Russian** (19 min) and **English** (19 min) — full pipeline end-to-end (VAD → ASR → Alignment)
 
 ## Results
 
@@ -44,7 +44,7 @@ Tested on:
 - **Qwen3-ForcedAligner** offers the best speed/accuracy trade-off for both languages (3rd place EN and RU, fastest among accurate models)
 - **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50–100ms uncertainty
 - All models were benchmarked using only permissive open-source licenses (MIT, Apache 2.0, CC-BY-4.0)
-- **Full pipeline test (19-min Russian podcast)**: Swift (VAD→ASR→Align) processes 1143s audio in **82s (13.9x realtime)**; equivalent Python pipeline takes **226s (5.1x realtime)** — Swift is **2.75x faster**. Alignment is the biggest win: Swift Kaldi 3.7s vs Python kalpy 52.9s (**14x**). See [RECOMMENDATION.md](RECOMMENDATION.md) for details.
+- **Full pipeline test**: Swift (VAD→ASR→Align) is **2.75–5.0x faster** than equivalent Python pipeline. Russian 19-min podcast: Swift 82s vs Python 226s (**2.75x**, 13.9x realtime). English 19-min audiobook: Swift 61s vs Python 304s (**5.0x**, 19.1x realtime). Zero alignment failures in all runs. See [RECOMMENDATION.md](RECOMMENDATION.md) for details.
 
 ## Models Tested
 

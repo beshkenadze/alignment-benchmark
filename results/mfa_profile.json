@@ -1,0 +1,86 @@
+[
+  {
+    "config": "baseline",
+    "language": "ru",
+    "audio_prep_s": 0.508,
+    "alignment_s": 107.594,
+    "total_s": 108.101,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "single_speaker",
+    "language": "ru",
+    "audio_prep_s": 0.069,
+    "alignment_s": 105.241,
+    "total_s": 105.31,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "jobs_1",
+    "language": "ru",
+    "audio_prep_s": 0.13,
+    "alignment_s": 107.125,
+    "total_s": 107.255,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "jobs_8",
+    "language": "ru",
+    "audio_prep_s": 0.121,
+    "alignment_s": 106.409,
+    "total_s": 106.53,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "no_mp",
+    "language": "ru",
+    "audio_prep_s": 0.17,
+    "alignment_s": 107.04,
+    "total_s": 107.209,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "single_speaker_j1",
+    "language": "ru",
+    "audio_prep_s": 0.123,
+    "alignment_s": 110.371,
+    "total_s": 110.495,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "single_speaker_j8",
+    "language": "ru",
+    "audio_prep_s": 0.146,
+    "alignment_s": 106.565,
+    "total_s": 106.711,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "blas_2t_single",
+    "language": "ru",
+    "alignment_s": 107.25,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "blas_4t_single",
+    "language": "ru",
+    "alignment_s": 114.935,
+    "word_count": 25,
+    "error": null
+  },
+  {
+    "config": "blas_8t_single",
+    "language": "ru",
+    "alignment_s": 115.717,
+    "word_count": 25,
+    "error": null
+  }
+]

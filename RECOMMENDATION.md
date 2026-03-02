@@ -58,7 +58,7 @@ For languages without an MFA acoustic model, use qwen3-forced-aligner (0.6B). It
 | &nbsp;&nbsp;Viterbi decode | ~0.08s | 0.12s | | ~0.07s | 0.34s | |
 | Words aligned | 79 | 66 (+14 unk) | | 25 | 20 (+5 unk) | |
 
-#### Full pipeline (19-min real audio)
+#### Full pipeline (19-min real audio, different VAD + ASR)
 
 | Metric | Swift EN | Python EN | Swift | Swift RU | Python RU | Swift |
 |---|---|---|---|---|---|---|
@@ -67,6 +67,22 @@ For languages without an MFA acoustic model, use qwen3-forced-aligner (0.6B). It
 | Words aligned | 2886 | 2933 | | 2429 | 2469 | |
 | Segments | 163 | 287 | | 112 | 166 | |
 | Failures | 0 | 0 | | 0 | 0 | |
+
+#### Controlled comparison (same segments + same ASR text)
+
+Identical VAD segments and ASR transcripts (from Swift pipeline) fed to both aligners.
+
+| Metric | Swift EN | kalpy EN | | Swift RU | kalpy RU | |
+|---|---|---|---|---|---|---|
+| **Align model load** | 0.37s | 2.42s | **6.5x** | 1.35s | 23.45s | **17x** |
+| **Align inference** | 4.28s | 5.54s | **1.3x** | 3.74s | 5.59s | **1.5x** |
+| Words aligned | 2886 | 2934 | +1.7% | 2429 | 2478 | +2.0% |
+| Segments match | | 121/163 (74%) | | | 82/112 (73%) | |
+| Swift has more words | | 0 segments | | | 0 segments | |
+| kalpy has more words | | 42 segments | | | 30 segments | |
+| Failures | 0 | 0 | | 0 | 0 | |
+
+**Key finding**: kalpy consistently finds ~2% more words than Swift Kaldi on identical input. Swift never finds more. The difference likely comes from how each handles silence/noise phones at word boundaries — kalpy counts some boundary tokens that Swift filters. This is cosmetic, not an accuracy issue — the word timings themselves match within ~100ms.
 
 **Why Python RU alignment is so slow**: `kalpy` rebuilds the lexicon FST from the 452K-word Russian dictionary on every model load (22.8s). Swift pre-compiles the FST once during C++ initialization. For inference, Python's per-utterance CMVN and temp file I/O add overhead that scales with segment count.
 

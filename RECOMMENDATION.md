@@ -43,6 +43,33 @@ For languages without an MFA acoustic model, use qwen3-forced-aligner (0.6B). It
 | MFA Python API (`KalpyAligner`) | 1.49s | 1.61s | yes |
 | **SwiftKaldiAligner** | **0.13s** | **0.11s** | **no** |
 
+### Swift vs Python Kaldi alignment (detailed)
+
+#### Short clips (standalone Kaldi benchmark)
+
+| Metric | Swift EN (30s) | Python EN (30s) | Swift advantage | Swift RU (10s) | Python RU (10s) | Swift advantage |
+|---|---|---|---|---|---|---|
+| **Model load** | 0.23s | 4.67s | **20x** | 1.28s | 26.41s | **21x** |
+| &nbsp;&nbsp;acoustic model | instant | 0.52s | | instant | 0.55s | |
+| &nbsp;&nbsp;lexicon FST | instant | 1.63s | | instant | 22.83s | |
+| &nbsp;&nbsp;Python import | — | 2.16s | | — | 2.37s | |
+| **Inference** | 0.13s | 1.49s | **11x** | 0.11s | 1.61s | **15x** |
+| &nbsp;&nbsp;features (MFCC+LDA) | ~0.05s | 1.37s | | ~0.04s | 1.27s | |
+| &nbsp;&nbsp;Viterbi decode | ~0.08s | 0.12s | | ~0.07s | 0.34s | |
+| Words aligned | 79 | 66 (+14 unk) | | 25 | 20 (+5 unk) | |
+
+#### Full pipeline (19-min real audio)
+
+| Metric | Swift EN | Python EN | Swift | Swift RU | Python RU | Swift |
+|---|---|---|---|---|---|---|
+| **Align model load** | 0.37s | 2.56s | **6.9x** | 1.35s | 28.77s | **21x** |
+| **Align inference** | 4.28s | 7.39s | **1.7x** | 3.74s | 52.91s | **14x** |
+| Words aligned | 2886 | 2933 | | 2429 | 2469 | |
+| Segments | 163 | 287 | | 112 | 166 | |
+| Failures | 0 | 0 | | 0 | 0 | |
+
+**Why Python RU alignment is so slow**: `kalpy` rebuilds the lexicon FST from the 452K-word Russian dictionary on every model load (22.8s). Swift pre-compiles the FST once during C++ initialization. For inference, Python's per-utterance CMVN and temp file I/O add overhead that scales with segment count.
+
 SwiftKaldiAligner wraps Kaldi/OpenFst C++ static libraries via a C-style opaque handle API (`extern "C"`), exposed to Swift through SPM. Same acoustic models, same dictionary files, same MFCC→CMVN→Splice→LDA→HCLG→Viterbi pipeline — just without Python overhead.
 
 ### Accuracy parity

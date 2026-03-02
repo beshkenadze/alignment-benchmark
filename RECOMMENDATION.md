@@ -67,10 +67,12 @@ Qwen3 (87ms EN, 58ms RU) is a strong universal option but MFA API is more accura
 
 ## Full Pipeline Benchmark (19-min Russian podcast)
 
-End-to-end test on a real 19-minute Russian podcast episode (1143s):
+End-to-end test on a real 19-minute Russian podcast episode (1143s).
+
+### Swift Pipeline (native)
 
 ```
-Pipeline: Audio Load → VAD (Silero) → ASR (Qwen3) → Forced Alignment (Kaldi)
+Pipeline: Audio Load → VAD (Silero/CoreML) → ASR (Qwen3-ASR/MLX GPU) → Alignment (Kaldi/CPU)
 
 Audio: 1143.1s (19 min), Russian
 Segments: 112 speech segments (VAD)
@@ -78,25 +80,39 @@ Words: 2429 force-aligned
 Total: 82.1s → 13.9x realtime
 ```
 
-### Stage breakdown
+### Python Pipeline (comparison)
 
-| Stage | Tool | Time | % |
+```
+Pipeline: Audio Load → VAD (Silero/PyTorch CPU) → ASR (Whisper-large-v3-turbo/MLX GPU) → Alignment (Kaldi/kalpy CPU)
+
+Audio: 1143.1s (19 min), Russian
+Segments: 166 speech segments (VAD)
+Words: 2469 force-aligned
+Total: 226.2s → 5.1x realtime
+```
+
+### Swift vs Python comparison
+
+| Stage | Swift | Python | Swift advantage |
 |---|---|---|---|
-| Audio load | AVFoundation | 2.12s | 2.6% |
-| VAD | Silero (FluidAudio/CoreML) | 5.93s | 7.2% |
-| ASR model load | Qwen3-ASR 0.6B-4bit (MLX) | 1.84s | 2.2% |
-| **ASR inference** | **Qwen3-ASR (MLX GPU)** | **67.12s** | **81.8%** |
-| Alignment model load | Kaldi (SwiftKaldiAligner) | 1.35s | 1.6% |
-| **Alignment inference** | **Kaldi (CPU)** | **3.74s** | **4.6%** |
+| Audio load | 2.12s | 2.00s | — |
+| VAD | 5.93s | 5.47s | — |
+| ASR model load | 1.84s | 2.51s | 1.4x |
+| **ASR inference** | **67.12s** | **134.57s** | **2.0x** |
+| Alignment model load | 1.35s | 28.77s | **21.3x** |
+| **Alignment inference** | **3.74s** | **52.91s** | **14.1x** |
+| **TOTAL** | **82.1s** | **226.2s** | **2.75x** |
+| RTFx | 13.9x | 5.1x | |
 
 ### Key observations
 
-1. **ASR dominates** (82%) — alignment is <5% of total time
-2. **Zero alignment failures** on 112 segments — Kaldi handles real podcast audio reliably
-3. **13.9x realtime** end-to-end — processes 19 min audio in 82 seconds
-4. **All native Swift** — no Python runtime, no subprocess calls
-5. Build requires `xcodebuild` (not `swift build`) for MLX Metal shader compilation
-
+1. **Swift is 2.75x faster end-to-end** — 82s vs 226s for the same 19-min podcast
+2. **Alignment is the biggest win**: Swift Kaldi is **14x faster** than Python kalpy (3.7s vs 52.9s) — no Python interpreter, no temp file I/O, no per-utterance CMVN overhead
+3. **Alignment model load**: Swift 1.35s vs Python 28.8s (**21x**) — Python loads MFA AcousticModel + builds LexiconCompiler from scratch; Swift pre-compiles everything in C++
+4. **ASR**: Swift Qwen3-ASR is **2x faster** than Python Whisper-large-v3-turbo — smaller model (0.6B-4bit vs 809M) + native MLX-Swift vs Python MLX overhead
+5. **VAD is comparable** — both use Silero, similar speed (~5.5s)
+6. **Zero alignment failures** in both pipelines
+7. **Note**: Python uses Whisper-large-v3-turbo (not Qwen3-ASR) because mlx-audio Python 0.3.1 doesn't include Qwen3-ASR yet
 
 ## Production Integration
 

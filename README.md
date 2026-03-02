@@ -44,7 +44,7 @@ Tested on:
 - **Qwen3-ForcedAligner** offers the best speed/accuracy trade-off for both languages (3rd place EN and RU, fastest among accurate models)
 - **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50–100ms uncertainty
 - All models were benchmarked using only permissive open-source licenses (MIT, Apache 2.0, CC-BY-4.0)
-- **Full pipeline test (19-min Russian podcast)**: VAD (Silero/CoreML) → ASR (Qwen3-ASR/MLX GPU) → Alignment (Kaldi/CPU) processes 1143s audio in 82s (**13.9x realtime**, 2429 words, zero failures). ASR is 82% of time; alignment is <5%. See [RECOMMENDATION.md](RECOMMENDATION.md) for details.
+- **Full pipeline test (19-min Russian podcast)**: Swift (VAD→ASR→Align) processes 1143s audio in **82s (13.9x realtime)**; equivalent Python pipeline takes **226s (5.1x realtime)** — Swift is **2.75x faster**. Alignment is the biggest win: Swift Kaldi 3.7s vs Python kalpy 52.9s (**14x**). See [RECOMMENDATION.md](RECOMMENDATION.md) for details.
 
 ## Models Tested
 

@@ -65,6 +65,39 @@ Qwen3 (87ms EN, 58ms RU) is a strong universal option but MFA API is more accura
 
 **±75ms padding** on word boundaries for audio splicing — based on median deviations of best models (40–46ms) with safety buffer.
 
+## Full Pipeline Benchmark (19-min Russian podcast)
+
+End-to-end test on a real 19-minute Russian podcast episode (1143s):
+
+```
+Pipeline: Audio Load → VAD (Silero) → ASR (Qwen3) → Forced Alignment (Kaldi)
+
+Audio: 1143.1s (19 min), Russian
+Segments: 112 speech segments (VAD)
+Words: 2429 force-aligned
+Total: 82.1s → 13.9x realtime
+```
+
+### Stage breakdown
+
+| Stage | Tool | Time | % |
+|---|---|---|---|
+| Audio load | AVFoundation | 2.12s | 2.6% |
+| VAD | Silero (FluidAudio/CoreML) | 5.93s | 7.2% |
+| ASR model load | Qwen3-ASR 0.6B-4bit (MLX) | 1.84s | 2.2% |
+| **ASR inference** | **Qwen3-ASR (MLX GPU)** | **67.12s** | **81.8%** |
+| Alignment model load | Kaldi (SwiftKaldiAligner) | 1.35s | 1.6% |
+| **Alignment inference** | **Kaldi (CPU)** | **3.74s** | **4.6%** |
+
+### Key observations
+
+1. **ASR dominates** (82%) — alignment is <5% of total time
+2. **Zero alignment failures** on 112 segments — Kaldi handles real podcast audio reliably
+3. **13.9x realtime** end-to-end — processes 19 min audio in 82 seconds
+4. **All native Swift** — no Python runtime, no subprocess calls
+5. Build requires `xcodebuild` (not `swift build`) for MLX Metal shader compilation
+
+
 ## Production Integration
 
 ### Swift (recommended for iOS/macOS)

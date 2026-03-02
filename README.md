@@ -1,10 +1,11 @@
 # Forced Alignment Benchmark
 
-Benchmark of 10 word-level timestamp models for speech alignment on Apple Silicon (M1 Max, 32GB).
+Benchmark of 10 word-level timestamp models for speech alignment on Apple Silicon (M1 Max, 32GB). Includes full native Swift pipeline benchmark (VAD → ASR → Alignment).
 
-Tested on two audio samples:
+Tested on:
 - **English** (30s) — US Contract Law lecture
 - **Russian** (10s) — podcast excerpt
+- **Russian** (19 min) — full podcast episode, end-to-end pipeline
 
 ## Results
 
@@ -43,6 +44,7 @@ Tested on two audio samples:
 - **Qwen3-ForcedAligner** offers the best speed/accuracy trade-off for both languages (3rd place EN and RU, fastest among accurate models)
 - **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50–100ms uncertainty
 - All models were benchmarked using only permissive open-source licenses (MIT, Apache 2.0, CC-BY-4.0)
+- **Full pipeline test (19-min Russian podcast)**: VAD (Silero/CoreML) → ASR (Qwen3-ASR/MLX GPU) → Alignment (Kaldi/CPU) processes 1143s audio in 82s (**13.9x realtime**, 2429 words, zero failures). ASR is 82% of time; alignment is <5%. See [RECOMMENDATION.md](RECOMMENDATION.md) for details.
 
 ## Models Tested
 

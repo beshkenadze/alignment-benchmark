@@ -1,6 +1,6 @@
 # Forced Alignment Benchmark
 
-Benchmark of 9 word-level timestamp models for speech alignment on Apple Silicon (M1 Max, 32GB).
+Benchmark of 10 word-level timestamp models for speech alignment on Apple Silicon (M1 Max, 32GB).
 
 Tested on two audio samples:
 - **English** (30s) — US Contract Law lecture
@@ -12,7 +12,7 @@ Tested on two audio samples:
 
 | # | Model | Mean Start Dev | Median Start | Inference | License |
 |---|---|---:|---:|---:|---|
-| 🥇 | **MFA v3** | **69.3ms** | **39.0ms** | 35.1s (CLI) / **1.49s (API)** | MIT |
+| 🥇 | **MFA v3** | **69.3ms** | **39.0ms** | 35.1s (CLI) / **1.49s (API)** / **0.13s (Swift)** | MIT |
 | 🥈 | **ctc-forced-aligner (MMS)** | 73.3ms | 31.2ms | 4.6s | MIT |
 | 3 | qwen3-forced-aligner | 86.1ms | 52.7ms | 2.7s | Apache 2.0 |
 | 4 | whisper-char-align (large-v3) | 94.6ms | 55.9ms | 20.1s | MIT |
@@ -27,7 +27,7 @@ Tested on two audio samples:
 | # | Model | Mean Start Dev | Median Start | Inference | License |
 |---|---|---:|---:|---:|---|
 | 🥇 | **Vosk (ru-0.42)** | **45.1ms** | **31.2ms** | 1.0s | Apache 2.0 |
-| 🥈 | **MFA v3 (russian_mfa)** | **56.7ms** | 41.4ms | 190.8s (CLI) / **1.61s (API)** | MIT |
+| 🥈 | **MFA v3 (russian_mfa)** | **56.7ms** | 41.4ms | 190.8s (CLI) / **1.61s (API)** / **0.11s (Swift)** | MIT |
 | 3 | qwen3-forced-aligner | 63.2ms | 41.6ms | 0.25s | Apache 2.0 |
 | 4 | stable-ts (base) | 74.6ms | 57.8ms | 0.6s | MIT |
 | 5 | parakeet-tdt-0.6b-v3 (mlx) | 79.1ms | 69.1ms | 0.6s | CC-BY-4.0 |
@@ -38,7 +38,7 @@ Tested on two audio samples:
 
 ## Key Findings
 
-- **MFA v3** is the gold standard for accuracy (69ms EN, 57ms RU). The CLI is slow (35–191s), but using the direct `KalpyAligner` Python API achieves **1.5s per utterance** with negligible accuracy loss. See [MFA_ANALYSIS.md](MFA_ANALYSIS.md) for the deep-dive.
+- **MFA v3** is the gold standard for accuracy (69ms EN, 57ms RU). The CLI is slow (35–191s), but using the direct `KalpyAligner` Python API achieves **1.5s per utterance**. The native **[SwiftKaldiAligner](https://github.com/beshkenadze/SwiftKaldiAligner)** reimplementation achieves **0.11–0.13s** (12–14× faster than Python API, 270–1700× faster than CLI) with full parity. See [MFA_ANALYSIS.md](MFA_ANALYSIS.md) for the deep-dive.
 - **Vosk** is a surprise winner for Russian (45ms mean deviation), very fast, Apache 2.0 — but it's an ASR model that ignores the provided transcript
 - **Qwen3-ForcedAligner** offers the best speed/accuracy trade-off for both languages (3rd place EN and RU, fastest among accurate models)
 - **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50–100ms uncertainty
@@ -48,6 +48,7 @@ Tested on two audio samples:
 
 | Model | Type | Languages | Install |
 |---|---|---|---|
+| [SwiftKaldiAligner](https://github.com/beshkenadze/SwiftKaldiAligner) | Kaldi C++ via Swift | EN, RU | SPM package |
 | [stable-ts](https://github.com/jianfch/stable-ts) | Whisper DTW alignment | 99 | `pip install stable-ts` |
 | [WhisperX](https://github.com/m-bain/whisperX) | Whisper + wav2vec2 alignment | 99 | `pip install whisperx` |
 | [ctc-forced-aligner](https://github.com/MahmoudAshraf97/ctc-forced-aligner) | MMS CTC alignment | 1100+ | `pip install ctc-forced-aligner` |
@@ -55,7 +56,7 @@ Tested on two audio samples:
 | [Qwen3-ForcedAligner](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B) | LLM NAR alignment | 11 | `pip install mlx-audio` |
 | [Parakeet-TDT-0.6B-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) | TDT native timestamps | 25 EU | `pip install parakeet-mlx` |
 | [Vosk](https://alphacephei.com/vosk/) | Kaldi ASR + timestamps | 20+ | `pip install vosk` |
-| [MFA v3](https://montreal-forced-aligner.readthedocs.io/) | GMM-HMM forced alignment | ~30 | `conda install montreal-forced-aligner` |
+| [MFA v3](https://montreal-forced-aligner.readthedocs.io/) | GMM-HMM forced alignment | ~30 | `pip install montreal-forced-aligner` |
 | [whisper-char-align](https://github.com/30stomercury/whisper-char-alignment) | Character-level DTW | 99 | via stable-ts `aligner="new"` |
 
 ## How to Run

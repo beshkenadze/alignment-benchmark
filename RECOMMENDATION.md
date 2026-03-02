@@ -4,27 +4,26 @@
 
 Since Solovey is a text-based audio editor, the transcript is already available. This means we should use **forced aligners** (audio + transcript → word timestamps), not ASR models that ignore the transcript.
 
-### Primary: MFA v3 via Python API (both languages)
+### Primary: SwiftKaldiAligner (native, both languages)
 
-After deep-dive analysis ([MFA_ANALYSIS.md](MFA_ANALYSIS.md)), MFA's CLI slowness (35–191s) turned out to be **framework overhead, not alignment speed**. Using the direct `KalpyAligner` Python API, MFA becomes fast enough for interactive use:
+After the MFA Python API deep-dive ([MFA_ANALYSIS.md](MFA_ANALYSIS.md)), we went further and reimplemented the entire Kaldi forced alignment pipeline in C++ with a Swift wrapper: **[SwiftKaldiAligner](https://github.com/beshkenadze/SwiftKaldiAligner)**. Zero Python runtime dependency.
 
 ```
-MFA Alignment Service (long-running process)
+SwiftKaldiAligner (SPM package)
   │
-  │  Startup (once):
-  │    • Load acoustic models     ~1s
-  │    • Load cached lexicon FSTs  ~0.1s (pre-compiled)
+  │  Model load (once):
+  │    • EN: 0.23s  /  RU: 1.28s
   │
-  │  Per-request (~1.5s):
-  │    1. MFCC extraction          ~1.3s
-  │    2. Viterbi alignment         ~0.1–0.3s
+  │  Per-request:
+  │    • EN (30s audio): 0.13s  —  79 words
+  │    • RU (10s audio): 0.11s  —  25 words
   │
   Language Router:
-    ├─ EN → MFA english_mfa       96ms mean dev, 40ms median, 1.49s
-    │       MIT, conda install montreal-forced-aligner
+    ├─ EN → english_mfa model      ~100ms mean dev, 0.13s
+    │       MIT, SPM dependency
     │
-    ├─ RU → MFA russian_mfa       55ms mean dev, 46ms median, 1.61s
-    │       MIT, conda install montreal-forced-aligner
+    ├─ RU → russian_mfa model      ~100ms mean dev, 0.11s
+    │       MIT, SPM dependency
     │
     └─ Fallback (unsupported lang) → qwen3-forced-aligner
             Supports 11 languages, Apache 2.0
@@ -34,18 +33,21 @@ MFA Alignment Service (long-running process)
 
 For languages without an MFA acoustic model, use qwen3-forced-aligner (0.6B). It supports 11 languages and is the fastest among accurate models (0.25s for 10s audio).
 
-## Why MFA via API
+## Why SwiftKaldiAligner
 
-### The breakthrough
+### The progression
 
-MFA's CLI (`mfa align`) is slow because of framework overhead — database startup, corpus ingestion, FST compilation, speaker adaptation, multiprocessing spawn. **The actual Kaldi alignment takes 0.1–0.3s.** By calling `KalpyAligner` directly via Python, we skip all overhead:
+| Implementation | EN (30s) | RU (10s) | Python required |
+|---|---|---|---|
+| MFA CLI (`mfa align`) | 35.1s | 190.8s | yes + conda |
+| MFA Python API (`KalpyAligner`) | 1.49s | 1.61s | yes |
+| **SwiftKaldiAligner** | **0.13s** | **0.11s** | **no** |
 
-| Metric | CLI (`mfa align`) | Python API | Speedup |
-|--------|-------------------|------------|---------|
-| EN (30s audio) | 35.1s | 1.49s | 23× |
-| RU (10s audio) | 190.8s | 1.61s | 118× |
-| EN accuracy | 67.6ms | 96.3ms | −29ms (no speaker adaptation) |
-| RU accuracy | 51.4ms | 55.3ms | −4ms (negligible) |
+SwiftKaldiAligner wraps Kaldi/OpenFst C++ static libraries via a C-style opaque handle API (`extern "C"`), exposed to Swift through SPM. Same acoustic models, same dictionary files, same MFCC→CMVN→Splice→LDA→HCLG→Viterbi pipeline — just without Python overhead.
+
+### Accuracy parity
+
+Word timings match MFA Python API within ~100ms (well within the inherent ~50–100ms uncertainty of forced alignment). SwiftKaldiAligner finds more words than MFA Python (79 vs 66+14 `<unk>` for EN, 25 vs 20+5 `<unk>` for RU) because it uses full dictionary pronunciations instead of mapping unknowns to `spn`.
 
 ### Why not ctc-forced-aligner for EN?
 
@@ -65,33 +67,36 @@ Qwen3 (87ms EN, 58ms RU) is a strong universal option but MFA API is more accura
 
 ## Production Integration
 
-```python
-# Solovey integration — keep model loaded, align per-request
-from kalpy.aligner import KalpyAligner
-from kalpy.feat.cmvn import CmvnComputer
-from kalpy.fstext.lexicon import LexiconCompiler
-from kalpy.utterance import Segment, Utterance as KalpyUtterance
-from montreal_forced_aligner.models import AcousticModel
+### Swift (recommended for iOS/macOS)
 
-# Load ONCE at startup:
-acoustic_model = AcousticModel("english_mfa.zip")
-lexicon_compiler = LexiconCompiler(...)
-lexicon_compiler.load_pronunciations("english_mfa.dict")
-lexicon_compiler.create_fsts()   # cache to disk for fast reload
-kalpy_aligner = KalpyAligner(acoustic_model, lexicon_compiler, beam=10)
+```swift
+import SwiftKaldiAligner
 
-# Per-request (~1.5s):
-seg = Segment("audio.wav", 0, None, 0)
-utt = KalpyUtterance(seg, transcript.lower())
-utt.generate_mfccs(acoustic_model.mfcc_computer)
-cmvn = CmvnComputer().compute_cmvn_from_features([utt.mfccs])
-utt.apply_cmvn(cmvn)
-ctm = kalpy_aligner.align_utterance(utt)
-for wi in ctm.word_intervals:
-    print(f"{wi.label}: {wi.begin:.3f}–{wi.end:.3f}s")
+// Load ONCE at startup:
+let aligner = try SwiftKaldiAligner(
+    modelDir: "/path/to/english_mfa",
+    dictPath: "/path/to/english_mfa.dict"
+)
+
+// Per-request (~0.13s for 30s audio):
+let words = try aligner.align(
+    audio: pcmSamples,
+    sampleRate: 16000,
+    transcript: "hello world"
+)
+for w in words {
+    print("\(w.word): \(w.startTime)–\(w.endTime)s")
+}
 ```
 
-See [bench_api.py](models/mfa/bench_api.py) for the complete working implementation.
+See [SwiftKaldiAligner](https://github.com/beshkenadze/SwiftKaldiAligner) for full setup instructions.
+
+### Python fallback (for unsupported languages)
+
+```python
+# For languages without MFA models, use qwen3-forced-aligner
+from mlx_audio.tts import generate_alignment
+```
 
 ## Models NOT Recommended
 
@@ -101,14 +106,15 @@ See [bench_api.py](models/mfa/bench_api.py) for the complete working implementat
 
 ## Forced Aligner vs ASR Classification
 
-| Model | Forced Aligner? | Uses provided transcript |
-|---|---|---|
-| MFA v3 (API) | ✅ | yes |
-| ctc-forced-aligner | ✅ | yes |
-| qwen3-forced-aligner | ✅ | yes |
-| stable-ts (align) | ✅ | yes |
-| whisper-char-align | ✅ | yes |
-| whisperx | ✅ | yes (alignment step) |
-| Vosk | ❌ ASR | no — does its own recognition |
-| Parakeet-TDT | ❌ ASR | no — does its own recognition |
-| faster-whisper | ❌ ASR | no — does its own recognition |
+| Model | Forced Aligner? | Uses provided transcript | Runtime |
+|---|---|---|---|
+| SwiftKaldiAligner | ✅ | yes | Swift (native) |
+| MFA v3 (API) | ✅ | yes | Python |
+| ctc-forced-aligner | ✅ | yes | Python |
+| qwen3-forced-aligner | ✅ | yes | Python |
+| stable-ts (align) | ✅ | yes | Python |
+| whisper-char-align | ✅ | yes | Python |
+| whisperx | ✅ | yes (alignment step) | Python |
+| Vosk | ❌ ASR | no — does its own recognition | Python |
+| Parakeet-TDT | ❌ ASR | no — does its own recognition | Python |
+| faster-whisper | ❌ ASR | no — does its own recognition | Python |

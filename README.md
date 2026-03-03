@@ -39,7 +39,7 @@ Tested on:
 
 ## Key Findings
 
-- **MFA v3** is the gold standard for accuracy (69ms EN, 57ms RU). The CLI is slow (35–191s), but using the direct `KalpyAligner` Python API achieves **1.5s per utterance**. The native **[SwiftKaldiAligner](https://github.com/beshkenadze/SwiftKaldiAligner)** reimplementation achieves **0.11–0.13s** (12–14× faster than Python API, 270–1700× faster than CLI) with full parity. See [MFA_ANALYSIS.md](MFA_ANALYSIS.md) for the deep-dive.
+- **MFA v3** is the gold standard for accuracy (69ms EN, 57ms RU). The CLI is slow (35–191s), but using the direct `KalpyAligner` Python API achieves **1.5s per utterance**. The native **[KaldiAlignerKit](https://github.com/beshkenadze/KaldiAlignerKit)** reimplementation achieves **0.11–0.13s** (12–14× faster than Python API, 270–1700× faster than CLI) with full parity. See [MFA_ANALYSIS.md](MFA_ANALYSIS.md) for the deep-dive.
 - **Vosk** is a surprise winner for Russian (45ms mean deviation), very fast, Apache 2.0 — but it's an ASR model that ignores the provided transcript
 - **Qwen3-ForcedAligner** offers the best speed/accuracy trade-off for both languages (3rd place EN and RU, fastest among accurate models)
 - **0% cross-model agreement** within 50ms for either language — forced alignment has inherent ~50–100ms uncertainty
@@ -50,7 +50,7 @@ Tested on:
 
 | Model | Type | Languages | Install |
 |---|---|---|---|
-| [SwiftKaldiAligner](https://github.com/beshkenadze/SwiftKaldiAligner) | Kaldi C++ via Swift | EN, RU | SPM package |
+| [KaldiAlignerKit](https://github.com/beshkenadze/KaldiAlignerKit) | Kaldi C++ via Swift | EN, RU | SPM package |
 | [stable-ts](https://github.com/jianfch/stable-ts) | Whisper DTW alignment | 99 | `pip install stable-ts` |
 | [WhisperX](https://github.com/m-bain/whisperX) | Whisper + wav2vec2 alignment | 99 | `pip install whisperx` |
 | [ctc-forced-aligner](https://github.com/MahmoudAshraf97/ctc-forced-aligner) | MMS CTC alignment | 1100+ | `pip install ctc-forced-aligner` |
